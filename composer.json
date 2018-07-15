@@ -1,0 +1,19 @@
+{
+    "name": "dmt-software/webservices-dutchbusiness",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bas de Mes",
+            "email": "bas@dmt-software.nl"
+        }
+    ],
+    "require": {
+        "dmt-software/webservices-client": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DMT\\WebservicesNl\\DutchBusiness\\": "src/"
+        }
+    }
+}
