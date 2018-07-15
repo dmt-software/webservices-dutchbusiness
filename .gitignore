@@ -1,4 +1,4 @@
 /src/Response/UpdateAddDossierResponse.php
 /src/Response/UpdateRemoveDossierResponse.php
 /vendor
-.idea/*
+.idea
