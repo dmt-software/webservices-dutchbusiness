@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class SbiCodeV3
 {
-
+                        
     /**
      * @JMS\SerializedName("sbi_code")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class SbiCodeV3
      * @var string
      */
     protected $sbiCode;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class SbiCodeV3
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @return string
      */
@@ -45,7 +45,7 @@ class SbiCodeV3
     {
         $this->sbiCode = $sbiCode;
     }
-
+                                    
     /**
      * @return string
      */

@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOInvestigationToken
 {
-
+                        
     /**
      * @JMS\SerializedName("token")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOInvestigationToken
      * @var string
      */
     protected $token;
-
+                                    
     /**
      * @return string
      */

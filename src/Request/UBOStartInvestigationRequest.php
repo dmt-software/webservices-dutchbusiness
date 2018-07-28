@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UBOStartInvestigationRequest
+class UBOStartInvestigationRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class UBOStartInvestigationRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("oldest_extract_date")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -31,7 +32,7 @@ class UBOStartInvestigationRequest
      * @var \DateTime
      */
     protected $oldestExtractDate;
-
+                                    
     /**
      * @JMS\SerializedName("use_updates")
      * @JMS\Type("boolean")
@@ -40,7 +41,7 @@ class UBOStartInvestigationRequest
      * @var bool
      */
     protected $useUpdates;
-
+                                    
     /**
      * @return string
      */
@@ -56,7 +57,7 @@ class UBOStartInvestigationRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -72,7 +73,7 @@ class UBOStartInvestigationRequest
     {
         $this->oldestExtractDate = $oldestExtractDate;
     }
-
+                                    
     /**
      * @return bool
      */

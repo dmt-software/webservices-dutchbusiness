@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Response;
 
+use DMT\WebservicesNl\Client\Response\ResponseInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -9,18 +10,18 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UpdateGetOverviewResponse
+class UpdateGetOverviewResponse implements ResponseInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("out")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\UpdateSubscriptionPagedResult")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var UpdateSubscriptionPagedResult
      */
     protected $out;
-
+                                    
     /**
      * @return UpdateSubscriptionPagedResult
      */

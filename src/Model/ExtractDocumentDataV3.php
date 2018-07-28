@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ExtractDocumentDataV3
 {
-
+                        
     /**
      * @JMS\SerializedName("document")
      * @JMS\Type("string")
@@ -20,16 +20,16 @@ class ExtractDocumentDataV3
      * @var string
      */
     protected $document;
-
+                                    
     /**
      * @JMS\SerializedName("data")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\ExtractDataV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var ExtractDataV3
      */
     protected $data;
-
+                                    
     /**
      * @JMS\SerializedName("source")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class ExtractDocumentDataV3
      * @var string
      */
     protected $source;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class ExtractDocumentDataV3
     {
         $this->document = $document;
     }
-
+                                    
     /**
      * @return ExtractDataV3
      */
@@ -70,7 +70,7 @@ class ExtractDocumentDataV3
     {
         $this->data = $data;
     }
-
+                                    
     /**
      * @return string
      */

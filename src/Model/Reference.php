@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Reference
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class Reference
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class Reference
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("trade_name")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class Reference
      * @var string
      */
     protected $tradeName;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class Reference
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class Reference
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class Reference
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class Reference
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("indication_economically_active")
      * @JMS\Type("boolean")
@@ -83,7 +83,7 @@ class Reference
      * @var bool
      */
     protected $indicationEconomicallyActive;
-
+                                    
     /**
      * @return string
      */
@@ -99,7 +99,7 @@ class Reference
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -115,7 +115,7 @@ class Reference
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -131,7 +131,7 @@ class Reference
     {
         $this->tradeName = $tradeName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -147,7 +147,7 @@ class Reference
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -163,7 +163,7 @@ class Reference
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return string
      */
@@ -179,7 +179,7 @@ class Reference
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -195,7 +195,7 @@ class Reference
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return bool
      */

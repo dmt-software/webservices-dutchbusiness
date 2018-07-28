@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Positions
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class Positions
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("reference_date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -29,7 +29,7 @@ class Positions
      * @var \DateTime
      */
     protected $referenceDate;
-
+                                    
     /**
      * @JMS\SerializedName("positions")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\PositionV2>")
@@ -39,7 +39,7 @@ class Positions
      * @var PositionV2[]
      */
     protected $positions;
-
+                                    
     /**
      * @return string
      */
@@ -55,7 +55,7 @@ class Positions
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -71,7 +71,7 @@ class Positions
     {
         $this->referenceDate = $referenceDate;
     }
-
+                                    
     /**
      * @return PositionV2[]
      */

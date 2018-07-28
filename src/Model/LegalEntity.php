@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class LegalEntity
 {
-
+                        
     /**
      * @JMS\SerializedName("rsin_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class LegalEntity
      * @var string
      */
     protected $rsinNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class LegalEntity
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("alternative_name")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class LegalEntity
      * @var string
      */
     protected $alternativeName;
-
+                                    
     /**
      * @JMS\SerializedName("shortened_name")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class LegalEntity
      * @var string
      */
     protected $shortenedName;
-
+                                    
     /**
      * @JMS\SerializedName("registration")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class LegalEntity
      * @var string
      */
     protected $registration;
-
+                                    
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class LegalEntity
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class LegalEntity
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_change")
      * @JMS\Type("string")
@@ -83,7 +83,7 @@ class LegalEntity
      * @var string
      */
     protected $legalFormChange;
-
+                                    
     /**
      * @JMS\SerializedName("foreign_legal_form_description")
      * @JMS\Type("string")
@@ -92,7 +92,7 @@ class LegalEntity
      * @var string
      */
     protected $foreignLegalFormDescription;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes")
      * @JMS\Type("array<string>")
@@ -102,7 +102,7 @@ class LegalEntity
      * @var array
      */
     protected $sbiCodes;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes_text")
      * @JMS\Type("array<string>")
@@ -112,7 +112,7 @@ class LegalEntity
      * @var array
      */
     protected $sbiCodesText;
-
+                                    
     /**
      * @JMS\SerializedName("activity")
      * @JMS\Type("string")
@@ -121,7 +121,7 @@ class LegalEntity
      * @var string
      */
     protected $activity;
-
+                                    
     /**
      * @JMS\SerializedName("company_arrangement")
      * @JMS\Type("string")
@@ -130,7 +130,7 @@ class LegalEntity
      * @var string
      */
     protected $companyArrangement;
-
+                                    
     /**
      * @JMS\SerializedName("legal_name")
      * @JMS\Type("string")
@@ -139,7 +139,7 @@ class LegalEntity
      * @var string
      */
     protected $legalName;
-
+                                    
     /**
      * @JMS\SerializedName("statutory_seat")
      * @JMS\Type("string")
@@ -148,43 +148,43 @@ class LegalEntity
      * @var string
      */
     protected $statutorySeat;
-
+                                    
     /**
      * @JMS\SerializedName("registration_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $registrationDate;
-
+                                    
     /**
      * @JMS\SerializedName("founding_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $foundingDate;
-
+                                    
     /**
      * @JMS\SerializedName("discontinuation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $discontinuationDate;
-
+                                    
     /**
      * @JMS\SerializedName("dissolution_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dissolutionDate;
-
+                                    
     /**
      * @JMS\SerializedName("dissolution_reason")
      * @JMS\Type("string")
@@ -193,79 +193,79 @@ class LegalEntity
      * @var string
      */
     protected $dissolutionReason;
-
+                                    
     /**
      * @JMS\SerializedName("removal_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $removalDate;
-
+                                    
     /**
      * @JMS\SerializedName("registration_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $registrationEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("legal_entity_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $legalEntityEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("liquidation_closure_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $liquidationClosureDate;
-
+                                    
     /**
      * @JMS\SerializedName("liquidation_reopening_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $liquidationReopeningDate;
-
+                                    
     /**
      * @JMS\SerializedName("deed_incorporation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $deedIncorporationDate;
-
+                                    
     /**
      * @JMS\SerializedName("deed_last_statutes_amendment_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $deedLastStatutesAmendmentDate;
-
+                                    
     /**
      * @JMS\SerializedName("last_statutes_amendment_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $lastStatutesAmendmentDate;
-
+                                    
     /**
      * @JMS\SerializedName("liability")
      * @JMS\Type("string")
@@ -274,7 +274,7 @@ class LegalEntity
      * @var string
      */
     protected $liability;
-
+                                    
     /**
      * @JMS\SerializedName("merger_description")
      * @JMS\Type("string")
@@ -283,7 +283,7 @@ class LegalEntity
      * @var string
      */
     protected $mergerDescription;
-
+                                    
     /**
      * @JMS\SerializedName("annual_report_submission")
      * @JMS\Type("string")
@@ -292,7 +292,7 @@ class LegalEntity
      * @var string
      */
     protected $annualReportSubmission;
-
+                                    
     /**
      * @JMS\SerializedName("authorized_share_capital")
      * @JMS\Type("integer")
@@ -301,7 +301,7 @@ class LegalEntity
      * @var int
      */
     protected $authorizedShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("authorized_share_capital_currency")
      * @JMS\Type("string")
@@ -310,7 +310,7 @@ class LegalEntity
      * @var string
      */
     protected $authorizedShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("issued_share_capital")
      * @JMS\Type("integer")
@@ -319,7 +319,7 @@ class LegalEntity
      * @var int
      */
     protected $issuedShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("issued_share_capital_currency")
      * @JMS\Type("string")
@@ -328,7 +328,7 @@ class LegalEntity
      * @var string
      */
     protected $issuedShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("paid_up_share_capital")
      * @JMS\Type("integer")
@@ -337,7 +337,7 @@ class LegalEntity
      * @var int
      */
     protected $paidUpShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("paid_up_share_capital_currency")
      * @JMS\Type("string")
@@ -346,7 +346,7 @@ class LegalEntity
      * @var string
      */
     protected $paidUpShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_postcode")
      * @JMS\Type("string")
@@ -355,7 +355,7 @@ class LegalEntity
      * @var string
      */
     protected $establishmentPostcode;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -364,7 +364,7 @@ class LegalEntity
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -373,7 +373,7 @@ class LegalEntity
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number")
      * @JMS\Type("integer")
@@ -382,7 +382,7 @@ class LegalEntity
      * @var int
      */
     protected $establishmentHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number_addition")
      * @JMS\Type("string")
@@ -391,7 +391,7 @@ class LegalEntity
      * @var string
      */
     protected $establishmentHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_country")
      * @JMS\Type("string")
@@ -400,7 +400,7 @@ class LegalEntity
      * @var string
      */
     protected $establishmentCountry;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_postcode")
      * @JMS\Type("string")
@@ -409,7 +409,7 @@ class LegalEntity
      * @var string
      */
     protected $correspondencePostcode;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -418,7 +418,7 @@ class LegalEntity
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -427,7 +427,7 @@ class LegalEntity
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number")
      * @JMS\Type("integer")
@@ -436,7 +436,7 @@ class LegalEntity
      * @var int
      */
     protected $correspondenceHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number_addition")
      * @JMS\Type("string")
@@ -445,7 +445,7 @@ class LegalEntity
      * @var string
      */
     protected $correspondenceHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_country")
      * @JMS\Type("string")
@@ -454,7 +454,7 @@ class LegalEntity
      * @var string
      */
     protected $correspondenceCountry;
-
+                                    
     /**
      * @JMS\SerializedName("duration")
      * @JMS\Type("string")
@@ -463,16 +463,16 @@ class LegalEntity
      * @var string
      */
     protected $duration;
-
+                                    
     /**
      * @JMS\SerializedName("duration_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $durationEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("shares")
      * @JMS\Type("string")
@@ -481,7 +481,7 @@ class LegalEntity
      * @var string
      */
     protected $shares;
-
+                                    
     /**
      * @JMS\SerializedName("share_holders")
      * @JMS\Type("string")
@@ -490,7 +490,7 @@ class LegalEntity
      * @var string
      */
     protected $shareHolders;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_numbers")
      * @JMS\Type("array<string>")
@@ -500,7 +500,7 @@ class LegalEntity
      * @var array
      */
     protected $telephoneNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("fax_numbers")
      * @JMS\Type("array<string>")
@@ -510,7 +510,7 @@ class LegalEntity
      * @var array
      */
     protected $faxNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("email_addresses")
      * @JMS\Type("array<string>")
@@ -520,7 +520,7 @@ class LegalEntity
      * @var array
      */
     protected $emailAddresses;
-
+                                    
     /**
      * @JMS\SerializedName("domain_names")
      * @JMS\Type("array<string>")
@@ -530,7 +530,7 @@ class LegalEntity
      * @var array
      */
     protected $domainNames;
-
+                                    
     /**
      * @return string
      */
@@ -546,7 +546,7 @@ class LegalEntity
     {
         $this->rsinNumber = $rsinNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -562,7 +562,7 @@ class LegalEntity
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -578,7 +578,7 @@ class LegalEntity
     {
         $this->alternativeName = $alternativeName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -594,7 +594,7 @@ class LegalEntity
     {
         $this->shortenedName = $shortenedName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -610,7 +610,7 @@ class LegalEntity
     {
         $this->registration = $registration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -626,7 +626,7 @@ class LegalEntity
     {
         $this->status = $status;
     }
-
+                                    
     /**
      * @return string
      */
@@ -642,7 +642,7 @@ class LegalEntity
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -658,7 +658,7 @@ class LegalEntity
     {
         $this->legalFormChange = $legalFormChange;
     }
-
+                                    
     /**
      * @return string
      */
@@ -674,7 +674,7 @@ class LegalEntity
     {
         $this->foreignLegalFormDescription = $foreignLegalFormDescription;
     }
-
+                                    
     /**
      * @return array
      */
@@ -690,7 +690,7 @@ class LegalEntity
     {
         $this->sbiCodes = $sbiCodes;
     }
-
+                                    
     /**
      * @return array
      */
@@ -706,7 +706,7 @@ class LegalEntity
     {
         $this->sbiCodesText = $sbiCodesText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -722,7 +722,7 @@ class LegalEntity
     {
         $this->activity = $activity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -738,7 +738,7 @@ class LegalEntity
     {
         $this->companyArrangement = $companyArrangement;
     }
-
+                                    
     /**
      * @return string
      */
@@ -754,7 +754,7 @@ class LegalEntity
     {
         $this->legalName = $legalName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -770,7 +770,7 @@ class LegalEntity
     {
         $this->statutorySeat = $statutorySeat;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -786,7 +786,7 @@ class LegalEntity
     {
         $this->registrationDate = $registrationDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -802,7 +802,7 @@ class LegalEntity
     {
         $this->foundingDate = $foundingDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -818,7 +818,7 @@ class LegalEntity
     {
         $this->discontinuationDate = $discontinuationDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -834,7 +834,7 @@ class LegalEntity
     {
         $this->dissolutionDate = $dissolutionDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -850,7 +850,7 @@ class LegalEntity
     {
         $this->dissolutionReason = $dissolutionReason;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -866,7 +866,7 @@ class LegalEntity
     {
         $this->removalDate = $removalDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -882,7 +882,7 @@ class LegalEntity
     {
         $this->registrationEndDate = $registrationEndDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -898,7 +898,7 @@ class LegalEntity
     {
         $this->legalEntityEndDate = $legalEntityEndDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -914,7 +914,7 @@ class LegalEntity
     {
         $this->liquidationClosureDate = $liquidationClosureDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -930,7 +930,7 @@ class LegalEntity
     {
         $this->liquidationReopeningDate = $liquidationReopeningDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -946,7 +946,7 @@ class LegalEntity
     {
         $this->deedIncorporationDate = $deedIncorporationDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -962,7 +962,7 @@ class LegalEntity
     {
         $this->deedLastStatutesAmendmentDate = $deedLastStatutesAmendmentDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -978,7 +978,7 @@ class LegalEntity
     {
         $this->lastStatutesAmendmentDate = $lastStatutesAmendmentDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -994,7 +994,7 @@ class LegalEntity
     {
         $this->liability = $liability;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1010,7 +1010,7 @@ class LegalEntity
     {
         $this->mergerDescription = $mergerDescription;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1026,7 +1026,7 @@ class LegalEntity
     {
         $this->annualReportSubmission = $annualReportSubmission;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1042,7 +1042,7 @@ class LegalEntity
     {
         $this->authorizedShareCapital = $authorizedShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1058,7 +1058,7 @@ class LegalEntity
     {
         $this->authorizedShareCapitalCurrency = $authorizedShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1074,7 +1074,7 @@ class LegalEntity
     {
         $this->issuedShareCapital = $issuedShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1090,7 +1090,7 @@ class LegalEntity
     {
         $this->issuedShareCapitalCurrency = $issuedShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1106,7 +1106,7 @@ class LegalEntity
     {
         $this->paidUpShareCapital = $paidUpShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1122,7 +1122,7 @@ class LegalEntity
     {
         $this->paidUpShareCapitalCurrency = $paidUpShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1138,7 +1138,7 @@ class LegalEntity
     {
         $this->establishmentPostcode = $establishmentPostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1154,7 +1154,7 @@ class LegalEntity
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1170,7 +1170,7 @@ class LegalEntity
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1186,7 +1186,7 @@ class LegalEntity
     {
         $this->establishmentHouseNumber = $establishmentHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1202,7 +1202,7 @@ class LegalEntity
     {
         $this->establishmentHouseNumberAddition = $establishmentHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1218,7 +1218,7 @@ class LegalEntity
     {
         $this->establishmentCountry = $establishmentCountry;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1234,7 +1234,7 @@ class LegalEntity
     {
         $this->correspondencePostcode = $correspondencePostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1250,7 +1250,7 @@ class LegalEntity
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1266,7 +1266,7 @@ class LegalEntity
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1282,7 +1282,7 @@ class LegalEntity
     {
         $this->correspondenceHouseNumber = $correspondenceHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1298,7 +1298,7 @@ class LegalEntity
     {
         $this->correspondenceHouseNumberAddition = $correspondenceHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1314,7 +1314,7 @@ class LegalEntity
     {
         $this->correspondenceCountry = $correspondenceCountry;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1330,7 +1330,7 @@ class LegalEntity
     {
         $this->duration = $duration;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -1346,7 +1346,7 @@ class LegalEntity
     {
         $this->durationEndDate = $durationEndDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1362,7 +1362,7 @@ class LegalEntity
     {
         $this->shares = $shares;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1378,7 +1378,7 @@ class LegalEntity
     {
         $this->shareHolders = $shareHolders;
     }
-
+                                    
     /**
      * @return array
      */
@@ -1394,7 +1394,7 @@ class LegalEntity
     {
         $this->telephoneNumbers = $telephoneNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -1410,7 +1410,7 @@ class LegalEntity
     {
         $this->faxNumbers = $faxNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -1426,7 +1426,7 @@ class LegalEntity
     {
         $this->emailAddresses = $emailAddresses;
     }
-
+                                    
     /**
      * @return array
      */

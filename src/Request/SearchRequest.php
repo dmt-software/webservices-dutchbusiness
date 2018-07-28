@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class SearchRequest
+class SearchRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class SearchRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("trade_name")
      * @JMS\Type("string")
@@ -31,7 +32,7 @@ class SearchRequest
      * @var string
      */
     protected $tradeName;
-
+                                    
     /**
      * @JMS\SerializedName("city")
      * @JMS\Type("string")
@@ -40,7 +41,7 @@ class SearchRequest
      * @var string
      */
     protected $city;
-
+                                    
     /**
      * @JMS\SerializedName("street")
      * @JMS\Type("string")
@@ -49,7 +50,7 @@ class SearchRequest
      * @var string
      */
     protected $street;
-
+                                    
     /**
      * @JMS\SerializedName("postcode")
      * @JMS\Type("string")
@@ -58,7 +59,7 @@ class SearchRequest
      * @var string
      */
     protected $postcode;
-
+                                    
     /**
      * @JMS\SerializedName("house_number")
      * @JMS\Type("integer")
@@ -67,7 +68,7 @@ class SearchRequest
      * @var int
      */
     protected $houseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("house_number_addition")
      * @JMS\Type("string")
@@ -76,7 +77,7 @@ class SearchRequest
      * @var string
      */
     protected $houseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_number")
      * @JMS\Type("string")
@@ -85,7 +86,7 @@ class SearchRequest
      * @var string
      */
     protected $telephoneNumber;
-
+                                    
     /**
      * @JMS\SerializedName("domain_name")
      * @JMS\Type("string")
@@ -94,7 +95,7 @@ class SearchRequest
      * @var string
      */
     protected $domainName;
-
+                                    
     /**
      * @JMS\SerializedName("strict_search")
      * @JMS\Type("boolean")
@@ -103,7 +104,7 @@ class SearchRequest
      * @var bool
      */
     protected $strictSearch;
-
+                                    
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -112,7 +113,7 @@ class SearchRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @return string
      */
@@ -128,7 +129,7 @@ class SearchRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -144,7 +145,7 @@ class SearchRequest
     {
         $this->tradeName = $tradeName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -160,7 +161,7 @@ class SearchRequest
     {
         $this->city = $city;
     }
-
+                                    
     /**
      * @return string
      */
@@ -176,7 +177,7 @@ class SearchRequest
     {
         $this->street = $street;
     }
-
+                                    
     /**
      * @return string
      */
@@ -192,7 +193,7 @@ class SearchRequest
     {
         $this->postcode = $postcode;
     }
-
+                                    
     /**
      * @return int
      */
@@ -208,7 +209,7 @@ class SearchRequest
     {
         $this->houseNumber = $houseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -224,7 +225,7 @@ class SearchRequest
     {
         $this->houseNumberAddition = $houseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -240,7 +241,7 @@ class SearchRequest
     {
         $this->telephoneNumber = $telephoneNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -256,7 +257,7 @@ class SearchRequest
     {
         $this->domainName = $domainName;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -272,7 +273,7 @@ class SearchRequest
     {
         $this->strictSearch = $strictSearch;
     }
-
+                                    
     /**
      * @return int
      */

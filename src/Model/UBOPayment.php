@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOPayment
 {
-
+                        
     /**
      * @JMS\SerializedName("pre")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOPayment
      * @var string
      */
     protected $pre;
-
+                                    
     /**
      * @JMS\SerializedName("cost")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UBOPayment
      * @var string
      */
     protected $cost;
-
+                                    
     /**
      * @JMS\SerializedName("refund")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class UBOPayment
      * @var string
      */
     protected $refund;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class UBOPayment
     {
         $this->pre = $pre;
     }
-
+                                    
     /**
      * @return string
      */
@@ -70,7 +70,7 @@ class UBOPayment
     {
         $this->cost = $cost;
     }
-
+                                    
     /**
      * @return string
      */

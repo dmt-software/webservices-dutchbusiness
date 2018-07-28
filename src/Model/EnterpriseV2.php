@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class EnterpriseV2
 {
-
+                        
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class EnterpriseV2
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("registration")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class EnterpriseV2
      * @var string
      */
     protected $registration;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class EnterpriseV2
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("activity")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class EnterpriseV2
      * @var string
      */
     protected $activity;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -56,52 +56,52 @@ class EnterpriseV2
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @JMS\SerializedName("incorporation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $incorporationDate;
-
+                                    
     /**
      * @JMS\SerializedName("founding_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $foundingDate;
-
+                                    
     /**
      * @JMS\SerializedName("discontinuation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $discontinuationDate;
-
+                                    
     /**
      * @JMS\SerializedName("date_since")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $dateSince;
-
+                                    
     /**
      * @JMS\SerializedName("personnel")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\PersonnelInfoV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var PersonnelInfoV2
      */
     protected $personnel;
-
+                                    
     /**
      * @JMS\SerializedName("remarks")
      * @JMS\Type("array<string>")
@@ -111,7 +111,7 @@ class EnterpriseV2
      * @var array
      */
     protected $remarks;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\SbiCodeV2>")
@@ -121,7 +121,7 @@ class EnterpriseV2
      * @var SbiCodeV2[]
      */
     protected $sbiCodes;
-
+                                    
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -131,7 +131,7 @@ class EnterpriseV2
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @return string
      */
@@ -147,7 +147,7 @@ class EnterpriseV2
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -163,7 +163,7 @@ class EnterpriseV2
     {
         $this->registration = $registration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -179,7 +179,7 @@ class EnterpriseV2
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -195,7 +195,7 @@ class EnterpriseV2
     {
         $this->activity = $activity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -211,7 +211,7 @@ class EnterpriseV2
     {
         $this->description = $description;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -227,7 +227,7 @@ class EnterpriseV2
     {
         $this->incorporationDate = $incorporationDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -243,7 +243,7 @@ class EnterpriseV2
     {
         $this->foundingDate = $foundingDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -259,7 +259,7 @@ class EnterpriseV2
     {
         $this->discontinuationDate = $discontinuationDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -275,7 +275,7 @@ class EnterpriseV2
     {
         $this->dateSince = $dateSince;
     }
-
+                                    
     /**
      * @return PersonnelInfoV2
      */
@@ -291,7 +291,7 @@ class EnterpriseV2
     {
         $this->personnel = $personnel;
     }
-
+                                    
     /**
      * @return array
      */
@@ -307,7 +307,7 @@ class EnterpriseV2
     {
         $this->remarks = $remarks;
     }
-
+                                    
     /**
      * @return SbiCodeV2[]
      */
@@ -323,7 +323,7 @@ class EnterpriseV2
     {
         $this->sbiCodes = $sbiCodes;
     }
-
+                                    
     /**
      * @return array
      */

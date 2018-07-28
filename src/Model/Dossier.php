@@ -11,16 +11,16 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Dossier
 {
-
+                        
     /**
      * @JMS\SerializedName("update_info")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\UpdateReference")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var UpdateReference
      */
     protected $updateInfo;
-
+                                    
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class Dossier
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class Dossier
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("main_establishment_number")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class Dossier
      * @var string
      */
     protected $mainEstablishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("indication_main_establishment")
      * @JMS\Type("boolean")
@@ -56,7 +56,7 @@ class Dossier
      * @var bool
      */
     protected $indicationMainEstablishment;
-
+                                    
     /**
      * @JMS\SerializedName("rsin_number")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class Dossier
      * @var string
      */
     protected $rsinNumber;
-
+                                    
     /**
      * @JMS\SerializedName("chamber_number")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class Dossier
      * @var string
      */
     protected $chamberNumber;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_code")
      * @JMS\Type("string")
@@ -83,7 +83,7 @@ class Dossier
      * @var string
      */
     protected $legalFormCode;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -92,7 +92,7 @@ class Dossier
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("indication_organisation_code")
      * @JMS\Type("string")
@@ -101,7 +101,7 @@ class Dossier
      * @var string
      */
     protected $indicationOrganisationCode;
-
+                                    
     /**
      * @JMS\SerializedName("legal_name")
      * @JMS\Type("string")
@@ -110,7 +110,7 @@ class Dossier
      * @var string
      */
     protected $legalName;
-
+                                    
     /**
      * @JMS\SerializedName("trade_name_45")
      * @JMS\Type("string")
@@ -119,7 +119,7 @@ class Dossier
      * @var string
      */
     protected $tradeName45;
-
+                                    
     /**
      * @JMS\SerializedName("trade_name_full")
      * @JMS\Type("string")
@@ -128,7 +128,7 @@ class Dossier
      * @var string
      */
     protected $tradeNameFull;
-
+                                    
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -138,7 +138,7 @@ class Dossier
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_postcode")
      * @JMS\Type("string")
@@ -147,7 +147,7 @@ class Dossier
      * @var string
      */
     protected $establishmentPostcode;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -156,7 +156,7 @@ class Dossier
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -165,7 +165,7 @@ class Dossier
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number")
      * @JMS\Type("integer")
@@ -174,7 +174,7 @@ class Dossier
      * @var int
      */
     protected $establishmentHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number_addition")
      * @JMS\Type("string")
@@ -183,7 +183,7 @@ class Dossier
      * @var string
      */
     protected $establishmentHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_postcode")
      * @JMS\Type("string")
@@ -192,7 +192,7 @@ class Dossier
      * @var string
      */
     protected $correspondencePostcode;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -201,7 +201,7 @@ class Dossier
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -210,7 +210,7 @@ class Dossier
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number")
      * @JMS\Type("integer")
@@ -219,7 +219,7 @@ class Dossier
      * @var int
      */
     protected $correspondenceHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number_addition")
      * @JMS\Type("string")
@@ -228,7 +228,7 @@ class Dossier
      * @var string
      */
     protected $correspondenceHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_country")
      * @JMS\Type("string")
@@ -237,7 +237,7 @@ class Dossier
      * @var string
      */
     protected $correspondenceCountry;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_number")
      * @JMS\Type("string")
@@ -246,7 +246,7 @@ class Dossier
      * @var string
      */
     protected $telephoneNumber;
-
+                                    
     /**
      * @JMS\SerializedName("mobile_number")
      * @JMS\Type("string")
@@ -255,7 +255,7 @@ class Dossier
      * @var string
      */
     protected $mobileNumber;
-
+                                    
     /**
      * @JMS\SerializedName("domain_name")
      * @JMS\Type("string")
@@ -264,7 +264,7 @@ class Dossier
      * @var string
      */
     protected $domainName;
-
+                                    
     /**
      * @JMS\SerializedName("contact_title1")
      * @JMS\Type("string")
@@ -273,7 +273,7 @@ class Dossier
      * @var string
      */
     protected $contactTitle1;
-
+                                    
     /**
      * @JMS\SerializedName("contact_title2")
      * @JMS\Type("string")
@@ -282,7 +282,7 @@ class Dossier
      * @var string
      */
     protected $contactTitle2;
-
+                                    
     /**
      * @JMS\SerializedName("contact_initials")
      * @JMS\Type("string")
@@ -291,7 +291,7 @@ class Dossier
      * @var string
      */
     protected $contactInitials;
-
+                                    
     /**
      * @JMS\SerializedName("contact_prefix")
      * @JMS\Type("string")
@@ -300,7 +300,7 @@ class Dossier
      * @var string
      */
     protected $contactPrefix;
-
+                                    
     /**
      * @JMS\SerializedName("contact_surname")
      * @JMS\Type("string")
@@ -309,7 +309,7 @@ class Dossier
      * @var string
      */
     protected $contactSurname;
-
+                                    
     /**
      * @JMS\SerializedName("contact_gender")
      * @JMS\Type("string")
@@ -318,7 +318,7 @@ class Dossier
      * @var string
      */
     protected $contactGender;
-
+                                    
     /**
      * @JMS\SerializedName("primary_sbi_code")
      * @JMS\Type("string")
@@ -327,7 +327,7 @@ class Dossier
      * @var string
      */
     protected $primarySbiCode;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code1")
      * @JMS\Type("string")
@@ -336,7 +336,7 @@ class Dossier
      * @var string
      */
     protected $secondarySbiCode1;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code2")
      * @JMS\Type("string")
@@ -345,7 +345,7 @@ class Dossier
      * @var string
      */
     protected $secondarySbiCode2;
-
+                                    
     /**
      * @JMS\SerializedName("primary_sbi_code_text")
      * @JMS\Type("string")
@@ -354,7 +354,7 @@ class Dossier
      * @var string
      */
     protected $primarySbiCodeText;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code1_text")
      * @JMS\Type("string")
@@ -363,7 +363,7 @@ class Dossier
      * @var string
      */
     protected $secondarySbiCode1Text;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code2_text")
      * @JMS\Type("string")
@@ -372,7 +372,7 @@ class Dossier
      * @var string
      */
     protected $secondarySbiCode2Text;
-
+                                    
     /**
      * @JMS\SerializedName("personnel")
      * @JMS\Type("integer")
@@ -381,7 +381,7 @@ class Dossier
      * @var int
      */
     protected $personnel;
-
+                                    
     /**
      * @JMS\SerializedName("class_personnel")
      * @JMS\Type("integer")
@@ -390,7 +390,7 @@ class Dossier
      * @var int
      */
     protected $classPersonnel;
-
+                                    
     /**
      * @JMS\SerializedName("personnel_fulltime")
      * @JMS\Type("integer")
@@ -399,7 +399,7 @@ class Dossier
      * @var int
      */
     protected $personnelFulltime;
-
+                                    
     /**
      * @JMS\SerializedName("class_personnel_fulltime")
      * @JMS\Type("integer")
@@ -408,16 +408,16 @@ class Dossier
      * @var int
      */
     protected $classPersonnelFulltime;
-
+                                    
     /**
      * @JMS\SerializedName("personnel_reference_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $personnelReferenceDate;
-
+                                    
     /**
      * @JMS\SerializedName("indication_import")
      * @JMS\Type("boolean")
@@ -426,7 +426,7 @@ class Dossier
      * @var bool
      */
     protected $indicationImport;
-
+                                    
     /**
      * @JMS\SerializedName("indication_export")
      * @JMS\Type("boolean")
@@ -435,7 +435,7 @@ class Dossier
      * @var bool
      */
     protected $indicationExport;
-
+                                    
     /**
      * @JMS\SerializedName("indication_economically_active")
      * @JMS\Type("boolean")
@@ -444,7 +444,7 @@ class Dossier
      * @var bool
      */
     protected $indicationEconomicallyActive;
-
+                                    
     /**
      * @JMS\SerializedName("indication_non_mailing")
      * @JMS\Type("boolean")
@@ -453,7 +453,7 @@ class Dossier
      * @var bool
      */
     protected $indicationNonMailing;
-
+                                    
     /**
      * @JMS\SerializedName("indication_bankruptcy")
      * @JMS\Type("boolean")
@@ -462,7 +462,7 @@ class Dossier
      * @var bool
      */
     protected $indicationBankruptcy;
-
+                                    
     /**
      * @JMS\SerializedName("indication_dip")
      * @JMS\Type("boolean")
@@ -471,7 +471,7 @@ class Dossier
      * @var bool
      */
     protected $indicationDip;
-
+                                    
     /**
      * @JMS\SerializedName("authorized_share_capital")
      * @JMS\Type("integer")
@@ -480,7 +480,7 @@ class Dossier
      * @var int
      */
     protected $authorizedShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("authorized_share_capital_currency")
      * @JMS\Type("string")
@@ -489,7 +489,7 @@ class Dossier
      * @var string
      */
     protected $authorizedShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("paid_up_share_capital")
      * @JMS\Type("integer")
@@ -498,7 +498,7 @@ class Dossier
      * @var int
      */
     protected $paidUpShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("paid_up_share_capital_currency")
      * @JMS\Type("string")
@@ -507,7 +507,7 @@ class Dossier
      * @var string
      */
     protected $paidUpShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("issued_share_capital")
      * @JMS\Type("integer")
@@ -516,7 +516,7 @@ class Dossier
      * @var int
      */
     protected $issuedShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("issued_share_capital_currency")
      * @JMS\Type("string")
@@ -525,34 +525,34 @@ class Dossier
      * @var string
      */
     protected $issuedShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("founding_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $foundingDate;
-
+                                    
     /**
      * @JMS\SerializedName("continuation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $continuationDate;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $establishmentDate;
-
+                                    
     /**
      * @return UpdateReference
      */
@@ -568,7 +568,7 @@ class Dossier
     {
         $this->updateInfo = $updateInfo;
     }
-
+                                    
     /**
      * @return string
      */
@@ -584,7 +584,7 @@ class Dossier
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -600,7 +600,7 @@ class Dossier
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -616,7 +616,7 @@ class Dossier
     {
         $this->mainEstablishmentNumber = $mainEstablishmentNumber;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -632,7 +632,7 @@ class Dossier
     {
         $this->indicationMainEstablishment = $indicationMainEstablishment;
     }
-
+                                    
     /**
      * @return string
      */
@@ -648,7 +648,7 @@ class Dossier
     {
         $this->rsinNumber = $rsinNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -664,7 +664,7 @@ class Dossier
     {
         $this->chamberNumber = $chamberNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -680,7 +680,7 @@ class Dossier
     {
         $this->legalFormCode = $legalFormCode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -696,7 +696,7 @@ class Dossier
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -712,7 +712,7 @@ class Dossier
     {
         $this->indicationOrganisationCode = $indicationOrganisationCode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -728,7 +728,7 @@ class Dossier
     {
         $this->legalName = $legalName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -744,7 +744,7 @@ class Dossier
     {
         $this->tradeName45 = $tradeName45;
     }
-
+                                    
     /**
      * @return string
      */
@@ -760,7 +760,7 @@ class Dossier
     {
         $this->tradeNameFull = $tradeNameFull;
     }
-
+                                    
     /**
      * @return array
      */
@@ -776,7 +776,7 @@ class Dossier
     {
         $this->tradeNames = $tradeNames;
     }
-
+                                    
     /**
      * @return string
      */
@@ -792,7 +792,7 @@ class Dossier
     {
         $this->establishmentPostcode = $establishmentPostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -808,7 +808,7 @@ class Dossier
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -824,7 +824,7 @@ class Dossier
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -840,7 +840,7 @@ class Dossier
     {
         $this->establishmentHouseNumber = $establishmentHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -856,7 +856,7 @@ class Dossier
     {
         $this->establishmentHouseNumberAddition = $establishmentHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -872,7 +872,7 @@ class Dossier
     {
         $this->correspondencePostcode = $correspondencePostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -888,7 +888,7 @@ class Dossier
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -904,7 +904,7 @@ class Dossier
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -920,7 +920,7 @@ class Dossier
     {
         $this->correspondenceHouseNumber = $correspondenceHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -936,7 +936,7 @@ class Dossier
     {
         $this->correspondenceHouseNumberAddition = $correspondenceHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -952,7 +952,7 @@ class Dossier
     {
         $this->correspondenceCountry = $correspondenceCountry;
     }
-
+                                    
     /**
      * @return string
      */
@@ -968,7 +968,7 @@ class Dossier
     {
         $this->telephoneNumber = $telephoneNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -984,7 +984,7 @@ class Dossier
     {
         $this->mobileNumber = $mobileNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1000,7 +1000,7 @@ class Dossier
     {
         $this->domainName = $domainName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1016,7 +1016,7 @@ class Dossier
     {
         $this->contactTitle1 = $contactTitle1;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1032,7 +1032,7 @@ class Dossier
     {
         $this->contactTitle2 = $contactTitle2;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1048,7 +1048,7 @@ class Dossier
     {
         $this->contactInitials = $contactInitials;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1064,7 +1064,7 @@ class Dossier
     {
         $this->contactPrefix = $contactPrefix;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1080,7 +1080,7 @@ class Dossier
     {
         $this->contactSurname = $contactSurname;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1096,7 +1096,7 @@ class Dossier
     {
         $this->contactGender = $contactGender;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1112,7 +1112,7 @@ class Dossier
     {
         $this->primarySbiCode = $primarySbiCode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1128,7 +1128,7 @@ class Dossier
     {
         $this->secondarySbiCode1 = $secondarySbiCode1;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1144,7 +1144,7 @@ class Dossier
     {
         $this->secondarySbiCode2 = $secondarySbiCode2;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1160,7 +1160,7 @@ class Dossier
     {
         $this->primarySbiCodeText = $primarySbiCodeText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1176,7 +1176,7 @@ class Dossier
     {
         $this->secondarySbiCode1Text = $secondarySbiCode1Text;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1192,7 +1192,7 @@ class Dossier
     {
         $this->secondarySbiCode2Text = $secondarySbiCode2Text;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1208,7 +1208,7 @@ class Dossier
     {
         $this->personnel = $personnel;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1224,7 +1224,7 @@ class Dossier
     {
         $this->classPersonnel = $classPersonnel;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1240,7 +1240,7 @@ class Dossier
     {
         $this->personnelFulltime = $personnelFulltime;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1256,7 +1256,7 @@ class Dossier
     {
         $this->classPersonnelFulltime = $classPersonnelFulltime;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -1272,7 +1272,7 @@ class Dossier
     {
         $this->personnelReferenceDate = $personnelReferenceDate;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1288,7 +1288,7 @@ class Dossier
     {
         $this->indicationImport = $indicationImport;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1304,7 +1304,7 @@ class Dossier
     {
         $this->indicationExport = $indicationExport;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1320,7 +1320,7 @@ class Dossier
     {
         $this->indicationEconomicallyActive = $indicationEconomicallyActive;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1336,7 +1336,7 @@ class Dossier
     {
         $this->indicationNonMailing = $indicationNonMailing;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1352,7 +1352,7 @@ class Dossier
     {
         $this->indicationBankruptcy = $indicationBankruptcy;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1368,7 +1368,7 @@ class Dossier
     {
         $this->indicationDip = $indicationDip;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1384,7 +1384,7 @@ class Dossier
     {
         $this->authorizedShareCapital = $authorizedShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1400,7 +1400,7 @@ class Dossier
     {
         $this->authorizedShareCapitalCurrency = $authorizedShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1416,7 +1416,7 @@ class Dossier
     {
         $this->paidUpShareCapital = $paidUpShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1432,7 +1432,7 @@ class Dossier
     {
         $this->paidUpShareCapitalCurrency = $paidUpShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1448,7 +1448,7 @@ class Dossier
     {
         $this->issuedShareCapital = $issuedShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1464,7 +1464,7 @@ class Dossier
     {
         $this->issuedShareCapitalCurrency = $issuedShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -1480,7 +1480,7 @@ class Dossier
     {
         $this->foundingDate = $foundingDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -1496,7 +1496,7 @@ class Dossier
     {
         $this->continuationDate = $continuationDate;
     }
-
+                                    
     /**
      * @return Date
      */

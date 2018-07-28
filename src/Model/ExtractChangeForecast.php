@@ -11,16 +11,16 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ExtractChangeForecast
 {
-
+                        
     /**
      * @JMS\SerializedName("change_set")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\ExtractChangeSet")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var ExtractChangeSet
      */
     protected $changeSet;
-
+                                    
     /**
      * @return ExtractChangeSet
      */

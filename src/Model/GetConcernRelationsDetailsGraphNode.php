@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class GetConcernRelationsDetailsGraphNode
 {
-
+                        
     /**
      * @JMS\SerializedName("id")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class GetConcernRelationsDetailsGraphNode
      * @var string
      */
     protected $id;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class GetConcernRelationsDetailsGraphNode
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @return string
      */
@@ -45,7 +45,7 @@ class GetConcernRelationsDetailsGraphNode
     {
         $this->id = $id;
     }
-
+                                    
     /**
      * @return string
      */

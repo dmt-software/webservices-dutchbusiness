@@ -11,16 +11,16 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ExtractHistory
 {
-
+                        
     /**
      * @JMS\SerializedName("forecast")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\ExtractChangeForecast")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var ExtractChangeForecast
      */
     protected $forecast;
-
+                                    
     /**
      * @JMS\SerializedName("references")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\ExtractReference>")
@@ -30,7 +30,7 @@ class ExtractHistory
      * @var ExtractReference[]
      */
     protected $references;
-
+                                    
     /**
      * @return ExtractChangeForecast
      */
@@ -46,7 +46,7 @@ class ExtractHistory
     {
         $this->forecast = $forecast;
     }
-
+                                    
     /**
      * @return ExtractReference[]
      */

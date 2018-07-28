@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class GetExtractDocumentDataV3Request
+class GetExtractDocumentDataV3Request implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class GetExtractDocumentDataV3Request
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("include_source")
      * @JMS\Type("boolean")
@@ -31,7 +32,7 @@ class GetExtractDocumentDataV3Request
      * @var bool
      */
     protected $includeSource;
-
+                                    
     /**
      * @return string
      */
@@ -47,7 +48,7 @@ class GetExtractDocumentDataV3Request
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return bool
      */

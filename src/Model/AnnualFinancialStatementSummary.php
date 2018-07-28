@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class AnnualFinancialStatementSummary
 {
-
+                        
     /**
      * @JMS\SerializedName("year")
      * @JMS\Type("integer")
@@ -20,34 +20,34 @@ class AnnualFinancialStatementSummary
      * @var int
      */
     protected $year;
-
+                                    
     /**
      * @JMS\SerializedName("turnover")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\MoneyV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var MoneyV2
      */
     protected $turnover;
-
+                                    
     /**
      * @JMS\SerializedName("profit")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\MoneyV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var MoneyV2
      */
     protected $profit;
-
+                                    
     /**
      * @JMS\SerializedName("assets")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\MoneyV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var MoneyV2
      */
     protected $assets;
-
+                                    
     /**
      * @return int
      */
@@ -63,7 +63,7 @@ class AnnualFinancialStatementSummary
     {
         $this->year = $year;
     }
-
+                                    
     /**
      * @return MoneyV2
      */
@@ -79,7 +79,7 @@ class AnnualFinancialStatementSummary
     {
         $this->turnover = $turnover;
     }
-
+                                    
     /**
      * @return MoneyV2
      */
@@ -95,7 +95,7 @@ class AnnualFinancialStatementSummary
     {
         $this->profit = $profit;
     }
-
+                                    
     /**
      * @return MoneyV2
      */

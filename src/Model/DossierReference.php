@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class DossierReference
 {
-
+                        
     /**
      * @JMS\SerializedName("update_date")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -20,16 +20,16 @@ class DossierReference
      * @var \DateTime
      */
     protected $updateDate;
-
+                                    
     /**
      * @JMS\SerializedName("change_set")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\ChangeSet")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var ChangeSet
      */
     protected $changeSet;
-
+                                    
     /**
      * @return \DateTime
      */
@@ -45,7 +45,7 @@ class DossierReference
     {
         $this->updateDate = $updateDate;
     }
-
+                                    
     /**
      * @return ChangeSet
      */

@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class DossierHistory
 {
-
+                        
     /**
      * @JMS\SerializedName("references")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\DossierReference>")
@@ -21,7 +21,7 @@ class DossierHistory
      * @var DossierReference[]
      */
     protected $references;
-
+                                    
     /**
      * @return DossierReference[]
      */

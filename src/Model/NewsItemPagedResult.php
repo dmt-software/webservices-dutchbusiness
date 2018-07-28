@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class NewsItemPagedResult extends PagedResult
 {
-
+                                                
     /**
      * @JMS\SerializedName("results")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\NewsItem>")

@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class PartnershipV3
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class PartnershipV3
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("rsin_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class PartnershipV3
      * @var string
      */
     protected $rsinNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class PartnershipV3
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("registration")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class PartnershipV3
      * @var string
      */
     protected $registration;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -56,34 +56,34 @@ class PartnershipV3
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("founding_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $foundingDate;
-
+                                    
     /**
      * @JMS\SerializedName("dissolution_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $dissolutionDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $functionStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("duration")
      * @JMS\Type("string")
@@ -92,34 +92,34 @@ class PartnershipV3
      * @var string
      */
     protected $duration;
-
+                                    
     /**
      * @JMS\SerializedName("limited_partnership_capital")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\MoneyV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var MoneyV3
      */
     protected $limitedPartnershipCapital;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_address")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV3
      */
     protected $establishmentAddress;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_address")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV3
      */
     protected $correspondenceAddress;
-
+                                    
     /**
      * @JMS\SerializedName("silent_partners")
      * @JMS\Type("integer")
@@ -128,7 +128,7 @@ class PartnershipV3
      * @var int
      */
     protected $silentPartners;
-
+                                    
     /**
      * @JMS\SerializedName("remarks")
      * @JMS\Type("array<string>")
@@ -138,7 +138,7 @@ class PartnershipV3
      * @var array
      */
     protected $remarks;
-
+                                    
     /**
      * @return string
      */
@@ -154,7 +154,7 @@ class PartnershipV3
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -170,7 +170,7 @@ class PartnershipV3
     {
         $this->rsinNumber = $rsinNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -186,7 +186,7 @@ class PartnershipV3
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -202,7 +202,7 @@ class PartnershipV3
     {
         $this->registration = $registration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -218,7 +218,7 @@ class PartnershipV3
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return DateV3
      */
@@ -234,7 +234,7 @@ class PartnershipV3
     {
         $this->foundingDate = $foundingDate;
     }
-
+                                    
     /**
      * @return DateV3
      */
@@ -250,7 +250,7 @@ class PartnershipV3
     {
         $this->dissolutionDate = $dissolutionDate;
     }
-
+                                    
     /**
      * @return DateV3
      */
@@ -266,7 +266,7 @@ class PartnershipV3
     {
         $this->functionStartDate = $functionStartDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -282,7 +282,7 @@ class PartnershipV3
     {
         $this->duration = $duration;
     }
-
+                                    
     /**
      * @return MoneyV3
      */
@@ -298,7 +298,7 @@ class PartnershipV3
     {
         $this->limitedPartnershipCapital = $limitedPartnershipCapital;
     }
-
+                                    
     /**
      * @return AddressV3
      */
@@ -314,7 +314,7 @@ class PartnershipV3
     {
         $this->establishmentAddress = $establishmentAddress;
     }
-
+                                    
     /**
      * @return AddressV3
      */
@@ -330,7 +330,7 @@ class PartnershipV3
     {
         $this->correspondenceAddress = $correspondenceAddress;
     }
-
+                                    
     /**
      * @return int
      */
@@ -346,7 +346,7 @@ class PartnershipV3
     {
         $this->silentPartners = $silentPartners;
     }
-
+                                    
     /**
      * @return array
      */

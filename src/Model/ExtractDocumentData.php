@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ExtractDocumentData
 {
-
+                        
     /**
      * @JMS\SerializedName("document")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class ExtractDocumentData
      * @var string
      */
     protected $document;
-
+                                    
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class ExtractDocumentData
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class ExtractDocumentData
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class ExtractDocumentData
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @JMS\SerializedName("document_date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -56,25 +56,25 @@ class ExtractDocumentData
      * @var \DateTime
      */
     protected $documentDate;
-
+                                    
     /**
      * @JMS\SerializedName("legal_entity")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\LegalEntity")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var LegalEntity
      */
     protected $legalEntity;
-
+                                    
     /**
      * @JMS\SerializedName("enterprise")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Enterprise")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Enterprise
      */
     protected $enterprise;
-
+                                    
     /**
      * @JMS\SerializedName("partnership")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\Partnership>")
@@ -84,7 +84,7 @@ class ExtractDocumentData
      * @var Partnership[]
      */
     protected $partnership;
-
+                                    
     /**
      * @JMS\SerializedName("establishments")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\Establishment>")
@@ -94,7 +94,7 @@ class ExtractDocumentData
      * @var Establishment[]
      */
     protected $establishments;
-
+                                    
     /**
      * @JMS\SerializedName("positions")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\Position>")
@@ -104,7 +104,7 @@ class ExtractDocumentData
      * @var Position[]
      */
     protected $positions;
-
+                                    
     /**
      * @return string
      */
@@ -120,7 +120,7 @@ class ExtractDocumentData
     {
         $this->document = $document;
     }
-
+                                    
     /**
      * @return string
      */
@@ -136,7 +136,7 @@ class ExtractDocumentData
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -152,7 +152,7 @@ class ExtractDocumentData
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -168,7 +168,7 @@ class ExtractDocumentData
     {
         $this->status = $status;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -184,7 +184,7 @@ class ExtractDocumentData
     {
         $this->documentDate = $documentDate;
     }
-
+                                    
     /**
      * @return LegalEntity
      */
@@ -200,7 +200,7 @@ class ExtractDocumentData
     {
         $this->legalEntity = $legalEntity;
     }
-
+                                    
     /**
      * @return Enterprise
      */
@@ -216,7 +216,7 @@ class ExtractDocumentData
     {
         $this->enterprise = $enterprise;
     }
-
+                                    
     /**
      * @return Partnership[]
      */
@@ -232,7 +232,7 @@ class ExtractDocumentData
     {
         $this->partnership = $partnership;
     }
-
+                                    
     /**
      * @return Establishment[]
      */
@@ -248,7 +248,7 @@ class ExtractDocumentData
     {
         $this->establishments = $establishments;
     }
-
+                                    
     /**
      * @return Position[]
      */

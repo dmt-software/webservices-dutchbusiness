@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class SearchDossierNumberRequest
+class SearchDossierNumberRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class SearchDossierNumberRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -31,7 +32,7 @@ class SearchDossierNumberRequest
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("rsin_number")
      * @JMS\Type("string")
@@ -40,7 +41,7 @@ class SearchDossierNumberRequest
      * @var string
      */
     protected $rsinNumber;
-
+                                    
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -49,7 +50,7 @@ class SearchDossierNumberRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @return string
      */
@@ -65,7 +66,7 @@ class SearchDossierNumberRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -81,7 +82,7 @@ class SearchDossierNumberRequest
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -97,7 +98,7 @@ class SearchDossierNumberRequest
     {
         $this->rsinNumber = $rsinNumber;
     }
-
+                                    
     /**
      * @return int
      */

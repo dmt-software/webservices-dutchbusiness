@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Insolvency
 {
-
+                        
     /**
      * @JMS\SerializedName("insolvency_id")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class Insolvency
      * @var string
      */
     protected $insolvencyId;
-
+                                    
     /**
      * @JMS\SerializedName("events")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\InsolvencyPublication>")
@@ -30,7 +30,7 @@ class Insolvency
      * @var InsolvencyPublication[]
      */
     protected $events;
-
+                                    
     /**
      * @return string
      */
@@ -46,7 +46,7 @@ class Insolvency
     {
         $this->insolvencyId = $insolvencyId;
     }
-
+                                    
     /**
      * @return InsolvencyPublication[]
      */

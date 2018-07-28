@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class GetConcernRelationsOverviewReference
 {
-
+                        
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class GetConcernRelationsOverviewReference
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class GetConcernRelationsOverviewReference
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("levels")
      * @JMS\Type("integer")
@@ -38,7 +38,7 @@ class GetConcernRelationsOverviewReference
      * @var int
      */
     protected $levels;
-
+                                    
     /**
      * @JMS\SerializedName("level_of_matched_registration")
      * @JMS\Type("integer")
@@ -47,7 +47,7 @@ class GetConcernRelationsOverviewReference
      * @var int
      */
     protected $levelOfMatchedRegistration;
-
+                                    
     /**
      * @JMS\SerializedName("registrations")
      * @JMS\Type("integer")
@@ -56,7 +56,7 @@ class GetConcernRelationsOverviewReference
      * @var int
      */
     protected $registrations;
-
+                                    
     /**
      * @return string
      */
@@ -72,7 +72,7 @@ class GetConcernRelationsOverviewReference
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -88,7 +88,7 @@ class GetConcernRelationsOverviewReference
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return int
      */
@@ -104,7 +104,7 @@ class GetConcernRelationsOverviewReference
     {
         $this->levels = $levels;
     }
-
+                                    
     /**
      * @return int
      */
@@ -120,7 +120,7 @@ class GetConcernRelationsOverviewReference
     {
         $this->levelOfMatchedRegistration = $levelOfMatchedRegistration;
     }
-
+                                    
     /**
      * @return int
      */

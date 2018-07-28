@@ -11,16 +11,16 @@ use JMS\Serializer\Annotation as JMS;
  */
 class DossierV2
 {
-
+                        
     /**
      * @JMS\SerializedName("update_info")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\UpdateReference")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var UpdateReference
      */
     protected $updateInfo;
-
+                                    
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class DossierV2
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class DossierV2
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("main_establishment_number")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class DossierV2
      * @var string
      */
     protected $mainEstablishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("indication_main_establishment")
      * @JMS\Type("boolean")
@@ -56,7 +56,7 @@ class DossierV2
      * @var bool
      */
     protected $indicationMainEstablishment;
-
+                                    
     /**
      * @JMS\SerializedName("rsin_number")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class DossierV2
      * @var string
      */
     protected $rsinNumber;
-
+                                    
     /**
      * @JMS\SerializedName("chamber_number")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class DossierV2
      * @var string
      */
     protected $chamberNumber;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_code")
      * @JMS\Type("string")
@@ -83,7 +83,7 @@ class DossierV2
      * @var string
      */
     protected $legalFormCode;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -92,7 +92,7 @@ class DossierV2
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("indication_organisation_code")
      * @JMS\Type("string")
@@ -101,7 +101,7 @@ class DossierV2
      * @var string
      */
     protected $indicationOrganisationCode;
-
+                                    
     /**
      * @JMS\SerializedName("legal_name")
      * @JMS\Type("string")
@@ -110,7 +110,7 @@ class DossierV2
      * @var string
      */
     protected $legalName;
-
+                                    
     /**
      * @JMS\SerializedName("trade_name_45")
      * @JMS\Type("string")
@@ -119,7 +119,7 @@ class DossierV2
      * @var string
      */
     protected $tradeName45;
-
+                                    
     /**
      * @JMS\SerializedName("trade_name_full")
      * @JMS\Type("string")
@@ -128,7 +128,7 @@ class DossierV2
      * @var string
      */
     protected $tradeNameFull;
-
+                                    
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -138,7 +138,7 @@ class DossierV2
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_postcode")
      * @JMS\Type("string")
@@ -147,7 +147,7 @@ class DossierV2
      * @var string
      */
     protected $establishmentPostcode;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -156,7 +156,7 @@ class DossierV2
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -165,7 +165,7 @@ class DossierV2
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number")
      * @JMS\Type("integer")
@@ -174,7 +174,7 @@ class DossierV2
      * @var int
      */
     protected $establishmentHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number_addition")
      * @JMS\Type("string")
@@ -183,7 +183,7 @@ class DossierV2
      * @var string
      */
     protected $establishmentHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_postcode")
      * @JMS\Type("string")
@@ -192,7 +192,7 @@ class DossierV2
      * @var string
      */
     protected $correspondencePostcode;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -201,7 +201,7 @@ class DossierV2
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -210,7 +210,7 @@ class DossierV2
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number")
      * @JMS\Type("integer")
@@ -219,7 +219,7 @@ class DossierV2
      * @var int
      */
     protected $correspondenceHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number_addition")
      * @JMS\Type("string")
@@ -228,7 +228,7 @@ class DossierV2
      * @var string
      */
     protected $correspondenceHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_country")
      * @JMS\Type("string")
@@ -237,7 +237,7 @@ class DossierV2
      * @var string
      */
     protected $correspondenceCountry;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_number")
      * @JMS\Type("string")
@@ -246,7 +246,7 @@ class DossierV2
      * @var string
      */
     protected $telephoneNumber;
-
+                                    
     /**
      * @JMS\SerializedName("mobile_number")
      * @JMS\Type("string")
@@ -255,7 +255,7 @@ class DossierV2
      * @var string
      */
     protected $mobileNumber;
-
+                                    
     /**
      * @JMS\SerializedName("domain_name")
      * @JMS\Type("string")
@@ -264,7 +264,7 @@ class DossierV2
      * @var string
      */
     protected $domainName;
-
+                                    
     /**
      * @JMS\SerializedName("contact_title1")
      * @JMS\Type("string")
@@ -273,7 +273,7 @@ class DossierV2
      * @var string
      */
     protected $contactTitle1;
-
+                                    
     /**
      * @JMS\SerializedName("contact_title2")
      * @JMS\Type("string")
@@ -282,7 +282,7 @@ class DossierV2
      * @var string
      */
     protected $contactTitle2;
-
+                                    
     /**
      * @JMS\SerializedName("contact_initials")
      * @JMS\Type("string")
@@ -291,7 +291,7 @@ class DossierV2
      * @var string
      */
     protected $contactInitials;
-
+                                    
     /**
      * @JMS\SerializedName("contact_prefix")
      * @JMS\Type("string")
@@ -300,7 +300,7 @@ class DossierV2
      * @var string
      */
     protected $contactPrefix;
-
+                                    
     /**
      * @JMS\SerializedName("contact_surname")
      * @JMS\Type("string")
@@ -309,7 +309,7 @@ class DossierV2
      * @var string
      */
     protected $contactSurname;
-
+                                    
     /**
      * @JMS\SerializedName("contact_gender")
      * @JMS\Type("string")
@@ -318,7 +318,7 @@ class DossierV2
      * @var string
      */
     protected $contactGender;
-
+                                    
     /**
      * @JMS\SerializedName("primary_sbi_code")
      * @JMS\Type("string")
@@ -327,7 +327,7 @@ class DossierV2
      * @var string
      */
     protected $primarySbiCode;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code1")
      * @JMS\Type("string")
@@ -336,7 +336,7 @@ class DossierV2
      * @var string
      */
     protected $secondarySbiCode1;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code2")
      * @JMS\Type("string")
@@ -345,7 +345,7 @@ class DossierV2
      * @var string
      */
     protected $secondarySbiCode2;
-
+                                    
     /**
      * @JMS\SerializedName("primary_sbi_code_text")
      * @JMS\Type("string")
@@ -354,7 +354,7 @@ class DossierV2
      * @var string
      */
     protected $primarySbiCodeText;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code1_text")
      * @JMS\Type("string")
@@ -363,7 +363,7 @@ class DossierV2
      * @var string
      */
     protected $secondarySbiCode1Text;
-
+                                    
     /**
      * @JMS\SerializedName("secondary_sbi_code2_text")
      * @JMS\Type("string")
@@ -372,7 +372,7 @@ class DossierV2
      * @var string
      */
     protected $secondarySbiCode2Text;
-
+                                    
     /**
      * @JMS\SerializedName("personnel")
      * @JMS\Type("integer")
@@ -381,7 +381,7 @@ class DossierV2
      * @var int
      */
     protected $personnel;
-
+                                    
     /**
      * @JMS\SerializedName("class_personnel")
      * @JMS\Type("integer")
@@ -390,7 +390,7 @@ class DossierV2
      * @var int
      */
     protected $classPersonnel;
-
+                                    
     /**
      * @JMS\SerializedName("personnel_fulltime")
      * @JMS\Type("integer")
@@ -399,7 +399,7 @@ class DossierV2
      * @var int
      */
     protected $personnelFulltime;
-
+                                    
     /**
      * @JMS\SerializedName("class_personnel_fulltime")
      * @JMS\Type("integer")
@@ -408,16 +408,16 @@ class DossierV2
      * @var int
      */
     protected $classPersonnelFulltime;
-
+                                    
     /**
      * @JMS\SerializedName("personnel_reference_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $personnelReferenceDate;
-
+                                    
     /**
      * @JMS\SerializedName("personnel_ci")
      * @JMS\Type("integer")
@@ -426,7 +426,7 @@ class DossierV2
      * @var int
      */
     protected $personnelCi;
-
+                                    
     /**
      * @JMS\SerializedName("class_personnel_ci")
      * @JMS\Type("integer")
@@ -435,16 +435,16 @@ class DossierV2
      * @var int
      */
     protected $classPersonnelCi;
-
+                                    
     /**
      * @JMS\SerializedName("personnel_ci_reference_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $personnelCiReferenceDate;
-
+                                    
     /**
      * @JMS\SerializedName("indication_import")
      * @JMS\Type("boolean")
@@ -453,7 +453,7 @@ class DossierV2
      * @var bool
      */
     protected $indicationImport;
-
+                                    
     /**
      * @JMS\SerializedName("indication_export")
      * @JMS\Type("boolean")
@@ -462,7 +462,7 @@ class DossierV2
      * @var bool
      */
     protected $indicationExport;
-
+                                    
     /**
      * @JMS\SerializedName("indication_economically_active")
      * @JMS\Type("boolean")
@@ -471,7 +471,7 @@ class DossierV2
      * @var bool
      */
     protected $indicationEconomicallyActive;
-
+                                    
     /**
      * @JMS\SerializedName("indication_non_mailing")
      * @JMS\Type("boolean")
@@ -480,7 +480,7 @@ class DossierV2
      * @var bool
      */
     protected $indicationNonMailing;
-
+                                    
     /**
      * @JMS\SerializedName("indication_bankruptcy")
      * @JMS\Type("boolean")
@@ -489,7 +489,7 @@ class DossierV2
      * @var bool
      */
     protected $indicationBankruptcy;
-
+                                    
     /**
      * @JMS\SerializedName("indication_dip")
      * @JMS\Type("boolean")
@@ -498,7 +498,7 @@ class DossierV2
      * @var bool
      */
     protected $indicationDip;
-
+                                    
     /**
      * @JMS\SerializedName("authorized_share_capital")
      * @JMS\Type("integer")
@@ -507,7 +507,7 @@ class DossierV2
      * @var int
      */
     protected $authorizedShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("authorized_share_capital_currency")
      * @JMS\Type("string")
@@ -516,7 +516,7 @@ class DossierV2
      * @var string
      */
     protected $authorizedShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("paid_up_share_capital")
      * @JMS\Type("integer")
@@ -525,7 +525,7 @@ class DossierV2
      * @var int
      */
     protected $paidUpShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("paid_up_share_capital_currency")
      * @JMS\Type("string")
@@ -534,7 +534,7 @@ class DossierV2
      * @var string
      */
     protected $paidUpShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("issued_share_capital")
      * @JMS\Type("integer")
@@ -543,7 +543,7 @@ class DossierV2
      * @var int
      */
     protected $issuedShareCapital;
-
+                                    
     /**
      * @JMS\SerializedName("issued_share_capital_currency")
      * @JMS\Type("string")
@@ -552,70 +552,70 @@ class DossierV2
      * @var string
      */
     protected $issuedShareCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("founding_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $foundingDate;
-
+                                    
     /**
      * @JMS\SerializedName("discontinuation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $discontinuationDate;
-
+                                    
     /**
      * @JMS\SerializedName("continuation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $continuationDate;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $establishmentDate;
-
+                                    
     /**
      * @JMS\SerializedName("annual_financial_statement_summary")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AnnualFinancialStatementSummary")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AnnualFinancialStatementSummary
      */
     protected $annualFinancialStatementSummary;
-
+                                    
     /**
      * @JMS\SerializedName("structure")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Structure")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Structure
      */
     protected $structure;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_collection")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\SBICollection")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var SBICollection
      */
     protected $sbiCollection;
-
+                                    
     /**
      * @return UpdateReference
      */
@@ -631,7 +631,7 @@ class DossierV2
     {
         $this->updateInfo = $updateInfo;
     }
-
+                                    
     /**
      * @return string
      */
@@ -647,7 +647,7 @@ class DossierV2
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -663,7 +663,7 @@ class DossierV2
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -679,7 +679,7 @@ class DossierV2
     {
         $this->mainEstablishmentNumber = $mainEstablishmentNumber;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -695,7 +695,7 @@ class DossierV2
     {
         $this->indicationMainEstablishment = $indicationMainEstablishment;
     }
-
+                                    
     /**
      * @return string
      */
@@ -711,7 +711,7 @@ class DossierV2
     {
         $this->rsinNumber = $rsinNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -727,7 +727,7 @@ class DossierV2
     {
         $this->chamberNumber = $chamberNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -743,7 +743,7 @@ class DossierV2
     {
         $this->legalFormCode = $legalFormCode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -759,7 +759,7 @@ class DossierV2
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -775,7 +775,7 @@ class DossierV2
     {
         $this->indicationOrganisationCode = $indicationOrganisationCode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -791,7 +791,7 @@ class DossierV2
     {
         $this->legalName = $legalName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -807,7 +807,7 @@ class DossierV2
     {
         $this->tradeName45 = $tradeName45;
     }
-
+                                    
     /**
      * @return string
      */
@@ -823,7 +823,7 @@ class DossierV2
     {
         $this->tradeNameFull = $tradeNameFull;
     }
-
+                                    
     /**
      * @return array
      */
@@ -839,7 +839,7 @@ class DossierV2
     {
         $this->tradeNames = $tradeNames;
     }
-
+                                    
     /**
      * @return string
      */
@@ -855,7 +855,7 @@ class DossierV2
     {
         $this->establishmentPostcode = $establishmentPostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -871,7 +871,7 @@ class DossierV2
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -887,7 +887,7 @@ class DossierV2
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -903,7 +903,7 @@ class DossierV2
     {
         $this->establishmentHouseNumber = $establishmentHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -919,7 +919,7 @@ class DossierV2
     {
         $this->establishmentHouseNumberAddition = $establishmentHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -935,7 +935,7 @@ class DossierV2
     {
         $this->correspondencePostcode = $correspondencePostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -951,7 +951,7 @@ class DossierV2
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -967,7 +967,7 @@ class DossierV2
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -983,7 +983,7 @@ class DossierV2
     {
         $this->correspondenceHouseNumber = $correspondenceHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -999,7 +999,7 @@ class DossierV2
     {
         $this->correspondenceHouseNumberAddition = $correspondenceHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1015,7 +1015,7 @@ class DossierV2
     {
         $this->correspondenceCountry = $correspondenceCountry;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1031,7 +1031,7 @@ class DossierV2
     {
         $this->telephoneNumber = $telephoneNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1047,7 +1047,7 @@ class DossierV2
     {
         $this->mobileNumber = $mobileNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1063,7 +1063,7 @@ class DossierV2
     {
         $this->domainName = $domainName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1079,7 +1079,7 @@ class DossierV2
     {
         $this->contactTitle1 = $contactTitle1;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1095,7 +1095,7 @@ class DossierV2
     {
         $this->contactTitle2 = $contactTitle2;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1111,7 +1111,7 @@ class DossierV2
     {
         $this->contactInitials = $contactInitials;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1127,7 +1127,7 @@ class DossierV2
     {
         $this->contactPrefix = $contactPrefix;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1143,7 +1143,7 @@ class DossierV2
     {
         $this->contactSurname = $contactSurname;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1159,7 +1159,7 @@ class DossierV2
     {
         $this->contactGender = $contactGender;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1175,7 +1175,7 @@ class DossierV2
     {
         $this->primarySbiCode = $primarySbiCode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1191,7 +1191,7 @@ class DossierV2
     {
         $this->secondarySbiCode1 = $secondarySbiCode1;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1207,7 +1207,7 @@ class DossierV2
     {
         $this->secondarySbiCode2 = $secondarySbiCode2;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1223,7 +1223,7 @@ class DossierV2
     {
         $this->primarySbiCodeText = $primarySbiCodeText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1239,7 +1239,7 @@ class DossierV2
     {
         $this->secondarySbiCode1Text = $secondarySbiCode1Text;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1255,7 +1255,7 @@ class DossierV2
     {
         $this->secondarySbiCode2Text = $secondarySbiCode2Text;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1271,7 +1271,7 @@ class DossierV2
     {
         $this->personnel = $personnel;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1287,7 +1287,7 @@ class DossierV2
     {
         $this->classPersonnel = $classPersonnel;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1303,7 +1303,7 @@ class DossierV2
     {
         $this->personnelFulltime = $personnelFulltime;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1319,7 +1319,7 @@ class DossierV2
     {
         $this->classPersonnelFulltime = $classPersonnelFulltime;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -1335,7 +1335,7 @@ class DossierV2
     {
         $this->personnelReferenceDate = $personnelReferenceDate;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1351,7 +1351,7 @@ class DossierV2
     {
         $this->personnelCi = $personnelCi;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1367,7 +1367,7 @@ class DossierV2
     {
         $this->classPersonnelCi = $classPersonnelCi;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -1383,7 +1383,7 @@ class DossierV2
     {
         $this->personnelCiReferenceDate = $personnelCiReferenceDate;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1399,7 +1399,7 @@ class DossierV2
     {
         $this->indicationImport = $indicationImport;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1415,7 +1415,7 @@ class DossierV2
     {
         $this->indicationExport = $indicationExport;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1431,7 +1431,7 @@ class DossierV2
     {
         $this->indicationEconomicallyActive = $indicationEconomicallyActive;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1447,7 +1447,7 @@ class DossierV2
     {
         $this->indicationNonMailing = $indicationNonMailing;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1463,7 +1463,7 @@ class DossierV2
     {
         $this->indicationBankruptcy = $indicationBankruptcy;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -1479,7 +1479,7 @@ class DossierV2
     {
         $this->indicationDip = $indicationDip;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1495,7 +1495,7 @@ class DossierV2
     {
         $this->authorizedShareCapital = $authorizedShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1511,7 +1511,7 @@ class DossierV2
     {
         $this->authorizedShareCapitalCurrency = $authorizedShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1527,7 +1527,7 @@ class DossierV2
     {
         $this->paidUpShareCapital = $paidUpShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1543,7 +1543,7 @@ class DossierV2
     {
         $this->paidUpShareCapitalCurrency = $paidUpShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1559,7 +1559,7 @@ class DossierV2
     {
         $this->issuedShareCapital = $issuedShareCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1575,7 +1575,7 @@ class DossierV2
     {
         $this->issuedShareCapitalCurrency = $issuedShareCapitalCurrency;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -1591,7 +1591,7 @@ class DossierV2
     {
         $this->foundingDate = $foundingDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -1607,7 +1607,7 @@ class DossierV2
     {
         $this->discontinuationDate = $discontinuationDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -1623,7 +1623,7 @@ class DossierV2
     {
         $this->continuationDate = $continuationDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -1639,7 +1639,7 @@ class DossierV2
     {
         $this->establishmentDate = $establishmentDate;
     }
-
+                                    
     /**
      * @return AnnualFinancialStatementSummary
      */
@@ -1651,11 +1651,12 @@ class DossierV2
     /**
      * @param AnnualFinancialStatementSummary $annualFinancialStatementSummary
      */
-    public function setAnnualFinancialStatementSummary(AnnualFinancialStatementSummary $annualFinancialStatementSummary): void
-    {
+    public function setAnnualFinancialStatementSummary(
+        AnnualFinancialStatementSummary $annualFinancialStatementSummary
+    ): void {
         $this->annualFinancialStatementSummary = $annualFinancialStatementSummary;
     }
-
+                                    
     /**
      * @return Structure
      */
@@ -1671,7 +1672,7 @@ class DossierV2
     {
         $this->structure = $structure;
     }
-
+                                    
     /**
      * @return SBICollection
      */

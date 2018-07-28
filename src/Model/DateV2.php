@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class DateV2
 {
-
+                        
     /**
      * @JMS\SerializedName("year")
      * @JMS\Type("integer")
@@ -20,7 +20,7 @@ class DateV2
      * @var int
      */
     protected $year;
-
+                                    
     /**
      * @JMS\SerializedName("month")
      * @JMS\Type("integer")
@@ -29,7 +29,7 @@ class DateV2
      * @var int
      */
     protected $month;
-
+                                    
     /**
      * @JMS\SerializedName("day")
      * @JMS\Type("integer")
@@ -38,7 +38,7 @@ class DateV2
      * @var int
      */
     protected $day;
-
+                                    
     /**
      * @return int
      */
@@ -54,7 +54,7 @@ class DateV2
     {
         $this->year = $year;
     }
-
+                                    
     /**
      * @return int
      */
@@ -70,7 +70,7 @@ class DateV2
     {
         $this->month = $month;
     }
-
+                                    
     /**
      * @return int
      */

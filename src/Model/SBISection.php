@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class SBISection
 {
-
+                        
     /**
      * @JMS\SerializedName("section_code")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class SBISection
      * @var string
      */
     protected $sectionCode;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class SBISection
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @return string
      */
@@ -45,7 +45,7 @@ class SBISection
     {
         $this->sectionCode = $sectionCode;
     }
-
+                                    
     /**
      * @return string
      */

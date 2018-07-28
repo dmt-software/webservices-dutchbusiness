@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class NewsItem
 {
-
+                        
     /**
      * @JMS\SerializedName("title")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class NewsItem
      * @var string
      */
     protected $title;
-
+                                    
     /**
      * @JMS\SerializedName("date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -29,7 +29,7 @@ class NewsItem
      * @var \DateTime
      */
     protected $date;
-
+                                    
     /**
      * @JMS\SerializedName("short")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class NewsItem
      * @var string
      */
     protected $short;
-
+                                    
     /**
      * @JMS\SerializedName("url")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class NewsItem
      * @var string
      */
     protected $url;
-
+                                    
     /**
      * @JMS\SerializedName("source")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class NewsItem
      * @var string
      */
     protected $source;
-
+                                    
     /**
      * @JMS\SerializedName("type")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class NewsItem
      * @var string
      */
     protected $type;
-
+                                    
     /**
      * @JMS\SerializedName("sentiment")
      * @JMS\Type("double")
@@ -74,7 +74,7 @@ class NewsItem
      * @var float
      */
     protected $sentiment;
-
+                                    
     /**
      * @JMS\SerializedName("topics")
      * @JMS\Type("array<string>")
@@ -84,7 +84,7 @@ class NewsItem
      * @var array
      */
     protected $topics;
-
+                                    
     /**
      * @JMS\SerializedName("companies")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\NewsCompany>")
@@ -94,7 +94,7 @@ class NewsItem
      * @var NewsCompany[]
      */
     protected $companies;
-
+                                    
     /**
      * @return string
      */
@@ -110,7 +110,7 @@ class NewsItem
     {
         $this->title = $title;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -126,7 +126,7 @@ class NewsItem
     {
         $this->date = $date;
     }
-
+                                    
     /**
      * @return string
      */
@@ -142,7 +142,7 @@ class NewsItem
     {
         $this->short = $short;
     }
-
+                                    
     /**
      * @return string
      */
@@ -158,7 +158,7 @@ class NewsItem
     {
         $this->url = $url;
     }
-
+                                    
     /**
      * @return string
      */
@@ -174,7 +174,7 @@ class NewsItem
     {
         $this->source = $source;
     }
-
+                                    
     /**
      * @return string
      */
@@ -190,7 +190,7 @@ class NewsItem
     {
         $this->type = $type;
     }
-
+                                    
     /**
      * @return float
      */
@@ -206,7 +206,7 @@ class NewsItem
     {
         $this->sentiment = $sentiment;
     }
-
+                                    
     /**
      * @return array
      */
@@ -222,7 +222,7 @@ class NewsItem
     {
         $this->topics = $topics;
     }
-
+                                    
     /**
      * @return NewsCompany[]
      */

@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class SearchNewsByDossierRequest
+class SearchNewsByDossierRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("integer")
@@ -22,7 +23,7 @@ class SearchNewsByDossierRequest
      * @var int
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("period_start")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -31,7 +32,7 @@ class SearchNewsByDossierRequest
      * @var \DateTime
      */
     protected $periodStart;
-
+                                    
     /**
      * @JMS\SerializedName("period_end")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -40,7 +41,7 @@ class SearchNewsByDossierRequest
      * @var \DateTime
      */
     protected $periodEnd;
-
+                                    
     /**
      * @JMS\SerializedName("sort_order")
      * @JMS\Type("string")
@@ -49,7 +50,7 @@ class SearchNewsByDossierRequest
      * @var string
      */
     protected $sortOrder;
-
+                                    
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -58,7 +59,7 @@ class SearchNewsByDossierRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @return int
      */
@@ -74,7 +75,7 @@ class SearchNewsByDossierRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -90,7 +91,7 @@ class SearchNewsByDossierRequest
     {
         $this->periodStart = $periodStart;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -106,7 +107,7 @@ class SearchNewsByDossierRequest
     {
         $this->periodEnd = $periodEnd;
     }
-
+                                    
     /**
      * @return string
      */
@@ -122,7 +123,7 @@ class SearchNewsByDossierRequest
     {
         $this->sortOrder = $sortOrder;
     }
-
+                                    
     /**
      * @return int
      */

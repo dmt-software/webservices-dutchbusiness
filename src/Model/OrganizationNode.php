@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class OrganizationNode
 {
-
+                        
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class OrganizationNode
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("type")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class OrganizationNode
      * @var string
      */
     protected $type;
-
+                                    
     /**
      * @JMS\SerializedName("id")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class OrganizationNode
      * @var string
      */
     protected $id;
-
+                                    
     /**
      * @JMS\SerializedName("children")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\OrganizationNode>")
@@ -48,7 +48,7 @@ class OrganizationNode
      * @var OrganizationNode[]
      */
     protected $children;
-
+                                    
     /**
      * @return string
      */
@@ -64,7 +64,7 @@ class OrganizationNode
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -80,7 +80,7 @@ class OrganizationNode
     {
         $this->type = $type;
     }
-
+                                    
     /**
      * @return string
      */
@@ -96,7 +96,7 @@ class OrganizationNode
     {
         $this->id = $id;
     }
-
+                                    
     /**
      * @return OrganizationNode[]
      */

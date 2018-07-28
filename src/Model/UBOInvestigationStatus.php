@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOInvestigationStatus
 {
-
+                        
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOInvestigationStatus
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @JMS\SerializedName("date_since")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -29,7 +29,7 @@ class UBOInvestigationStatus
      * @var \DateTime
      */
     protected $dateSince;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class UBOInvestigationStatus
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class UBOInvestigationStatus
     {
         $this->status = $status;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -70,7 +70,7 @@ class UBOInvestigationStatus
     {
         $this->dateSince = $dateSince;
     }
-
+                                    
     /**
      * @return string
      */

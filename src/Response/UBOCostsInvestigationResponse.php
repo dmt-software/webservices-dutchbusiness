@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Response;
 
+use DMT\WebservicesNl\Client\Response\ResponseInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -9,18 +10,18 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UBOCostsInvestigationResponse
+class UBOCostsInvestigationResponse implements ResponseInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("out")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\dutchBusinessUBOCostsInvestigationResult")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var dutchBusinessUBOCostsInvestigationResult
      */
     protected $out;
-
+                                    
     /**
      * @return dutchBusinessUBOCostsInvestigationResult
      */

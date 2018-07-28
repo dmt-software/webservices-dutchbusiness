@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class GetConcernRelationsOverviewResult
 {
-
+                        
     /**
      * @JMS\SerializedName("references")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\GetConcernRelationsOverviewReference>")
@@ -21,7 +21,7 @@ class GetConcernRelationsOverviewResult
      * @var GetConcernRelationsOverviewReference[]
      */
     protected $references;
-
+                                    
     /**
      * @return GetConcernRelationsOverviewReference[]
      */

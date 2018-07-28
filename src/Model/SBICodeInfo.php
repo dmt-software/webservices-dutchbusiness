@@ -11,16 +11,16 @@ use JMS\Serializer\Annotation as JMS;
  */
 class SBICodeInfo
 {
-
+                        
     /**
      * @JMS\SerializedName("section")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\SBISection")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var SBISection
      */
     protected $section;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\SBICode>")
@@ -30,7 +30,7 @@ class SBICodeInfo
      * @var SBICode[]
      */
     protected $sbiCodes;
-
+                                    
     /**
      * @return SBISection
      */
@@ -46,7 +46,7 @@ class SBICodeInfo
     {
         $this->section = $section;
     }
-
+                                    
     /**
      * @return SBICode[]
      */

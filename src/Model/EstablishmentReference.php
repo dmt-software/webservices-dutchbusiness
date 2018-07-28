@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class EstablishmentReference
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class EstablishmentReference
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class EstablishmentReference
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("legal_name")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class EstablishmentReference
      * @var string
      */
     protected $legalName;
-
+                                    
     /**
      * @JMS\SerializedName("trade_name")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class EstablishmentReference
      * @var string
      */
     protected $tradeName;
-
+                                    
     /**
      * @JMS\SerializedName("match_type")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class EstablishmentReference
      * @var string
      */
     protected $matchType;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class EstablishmentReference
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class EstablishmentReference
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -83,7 +83,7 @@ class EstablishmentReference
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -92,7 +92,7 @@ class EstablishmentReference
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("indication_main_establishment")
      * @JMS\Type("boolean")
@@ -101,7 +101,7 @@ class EstablishmentReference
      * @var bool
      */
     protected $indicationMainEstablishment;
-
+                                    
     /**
      * @return string
      */
@@ -117,7 +117,7 @@ class EstablishmentReference
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -133,7 +133,7 @@ class EstablishmentReference
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -149,7 +149,7 @@ class EstablishmentReference
     {
         $this->legalName = $legalName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -165,7 +165,7 @@ class EstablishmentReference
     {
         $this->tradeName = $tradeName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -181,7 +181,7 @@ class EstablishmentReference
     {
         $this->matchType = $matchType;
     }
-
+                                    
     /**
      * @return string
      */
@@ -197,7 +197,7 @@ class EstablishmentReference
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -213,7 +213,7 @@ class EstablishmentReference
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return string
      */
@@ -229,7 +229,7 @@ class EstablishmentReference
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -245,7 +245,7 @@ class EstablishmentReference
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return bool
      */

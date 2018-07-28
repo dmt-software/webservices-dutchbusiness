@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class SBICollection
 {
-
+                        
     /**
      * @JMS\SerializedName("original")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\SBICode>")
@@ -21,7 +21,7 @@ class SBICollection
      * @var SBICode[]
      */
     protected $original;
-
+                                    
     /**
      * @JMS\SerializedName("company_info")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\SBICode>")
@@ -31,7 +31,7 @@ class SBICollection
      * @var SBICode[]
      */
     protected $companyInfo;
-
+                                    
     /**
      * @return SBICode[]
      */
@@ -47,7 +47,7 @@ class SBICollection
     {
         $this->original = $original;
     }
-
+                                    
     /**
      * @return SBICode[]
      */

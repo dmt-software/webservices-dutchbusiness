@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOExtract
 {
-
+                        
     /**
      * @JMS\SerializedName("document")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOExtract
      * @var string
      */
     protected $document;
-
+                                    
     /**
      * @JMS\SerializedName("source")
      * @JMS\Type("string")
@@ -29,16 +29,16 @@ class UBOExtract
      * @var string
      */
     protected $source;
-
+                                    
     /**
      * @JMS\SerializedName("data")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\ExtractDocumentData")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var ExtractDocumentData
      */
     protected $data;
-
+                                    
     /**
      * @JMS\SerializedName("extract_date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -47,7 +47,7 @@ class UBOExtract
      * @var \DateTime
      */
     protected $extractDate;
-
+                                    
     /**
      * @return string
      */
@@ -63,7 +63,7 @@ class UBOExtract
     {
         $this->document = $document;
     }
-
+                                    
     /**
      * @return string
      */
@@ -79,7 +79,7 @@ class UBOExtract
     {
         $this->source = $source;
     }
-
+                                    
     /**
      * @return ExtractDocumentData
      */
@@ -95,7 +95,7 @@ class UBOExtract
     {
         $this->data = $data;
     }
-
+                                    
     /**
      * @return \DateTime
      */

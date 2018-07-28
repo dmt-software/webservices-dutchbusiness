@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Position
 {
-
+                        
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -21,7 +21,7 @@ class Position
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -30,7 +30,7 @@ class Position
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -39,7 +39,7 @@ class Position
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -48,7 +48,7 @@ class Position
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("first_name")
      * @JMS\Type("string")
@@ -57,7 +57,7 @@ class Position
      * @var string
      */
     protected $firstName;
-
+                                    
     /**
      * @JMS\SerializedName("title")
      * @JMS\Type("string")
@@ -66,7 +66,7 @@ class Position
      * @var string
      */
     protected $title;
-
+                                    
     /**
      * @JMS\SerializedName("initials")
      * @JMS\Type("string")
@@ -75,7 +75,7 @@ class Position
      * @var string
      */
     protected $initials;
-
+                                    
     /**
      * @JMS\SerializedName("last_name")
      * @JMS\Type("string")
@@ -84,7 +84,7 @@ class Position
      * @var string
      */
     protected $lastName;
-
+                                    
     /**
      * @JMS\SerializedName("function_type")
      * @JMS\Type("string")
@@ -93,7 +93,7 @@ class Position
      * @var string
      */
     protected $functionType;
-
+                                    
     /**
      * @JMS\SerializedName("function_description")
      * @JMS\Type("string")
@@ -102,7 +102,7 @@ class Position
      * @var string
      */
     protected $functionDescription;
-
+                                    
     /**
      * @JMS\SerializedName("function_title")
      * @JMS\Type("string")
@@ -111,34 +111,34 @@ class Position
      * @var string
      */
     protected $functionTitle;
-
+                                    
     /**
      * @JMS\SerializedName("function_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $functionStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_registration_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $functionRegistrationDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $functionEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization")
      * @JMS\Type("string")
@@ -147,7 +147,7 @@ class Position
      * @var string
      */
     protected $functionAuthorization;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_description")
      * @JMS\Type("string")
@@ -156,16 +156,16 @@ class Position
      * @var string
      */
     protected $functionAuthorizationDescription;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $functionAuthorizationStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_signing_power")
      * @JMS\Type("string")
@@ -174,16 +174,16 @@ class Position
      * @var string
      */
     protected $functionAuthorizationSigningPower;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $functionAuthorizationEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_description")
      * @JMS\Type("string")
@@ -192,25 +192,25 @@ class Position
      * @var string
      */
     protected $authorizationDescription;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $authorizationStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $authorizationEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration")
      * @JMS\Type("string")
@@ -219,7 +219,7 @@ class Position
      * @var string
      */
     protected $inauguration;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_function")
      * @JMS\Type("string")
@@ -228,7 +228,7 @@ class Position
      * @var string
      */
     protected $inaugurationFunction;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_duration")
      * @JMS\Type("string")
@@ -237,16 +237,16 @@ class Position
      * @var string
      */
     protected $inaugurationDuration;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $inaugurationDate;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_body")
      * @JMS\Type("string")
@@ -255,7 +255,7 @@ class Position
      * @var string
      */
     protected $inaugurationBody;
-
+                                    
     /**
      * @JMS\SerializedName("under_receivership")
      * @JMS\Type("string")
@@ -264,7 +264,7 @@ class Position
      * @var string
      */
     protected $underReceivership;
-
+                                    
     /**
      * @JMS\SerializedName("rights_against_third_parties")
      * @JMS\Type("string")
@@ -273,7 +273,7 @@ class Position
      * @var string
      */
     protected $rightsAgainstThirdParties;
-
+                                    
     /**
      * @JMS\SerializedName("release_of_covenant")
      * @JMS\Type("string")
@@ -282,25 +282,25 @@ class Position
      * @var string
      */
     protected $releaseOfCovenant;
-
+                                    
     /**
      * @JMS\SerializedName("date_deceased")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dateDeceased;
-
+                                    
     /**
      * @JMS\SerializedName("date_of_birth")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dateOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("place_of_birth")
      * @JMS\Type("string")
@@ -309,7 +309,7 @@ class Position
      * @var string
      */
     protected $placeOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("country_of_birth")
      * @JMS\Type("string")
@@ -318,7 +318,7 @@ class Position
      * @var string
      */
     protected $countryOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("postcode")
      * @JMS\Type("string")
@@ -327,7 +327,7 @@ class Position
      * @var string
      */
     protected $postcode;
-
+                                    
     /**
      * @JMS\SerializedName("city")
      * @JMS\Type("string")
@@ -336,7 +336,7 @@ class Position
      * @var string
      */
     protected $city;
-
+                                    
     /**
      * @JMS\SerializedName("street")
      * @JMS\Type("string")
@@ -345,7 +345,7 @@ class Position
      * @var string
      */
     protected $street;
-
+                                    
     /**
      * @JMS\SerializedName("house_number")
      * @JMS\Type("integer")
@@ -354,7 +354,7 @@ class Position
      * @var int
      */
     protected $houseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("house_number_addition")
      * @JMS\Type("string")
@@ -363,7 +363,7 @@ class Position
      * @var string
      */
     protected $houseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("country")
      * @JMS\Type("string")
@@ -372,7 +372,7 @@ class Position
      * @var string
      */
     protected $country;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_numbers")
      * @JMS\Type("array<string>")
@@ -382,25 +382,25 @@ class Position
      * @var array
      */
     protected $telephoneNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("date_since")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dateSince;
-
+                                    
     /**
      * @JMS\SerializedName("date_joined")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dateJoined;
-
+                                    
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -409,7 +409,7 @@ class Position
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @return array
      */
@@ -425,7 +425,7 @@ class Position
     {
         $this->tradeNames = $tradeNames;
     }
-
+                                    
     /**
      * @return string
      */
@@ -441,7 +441,7 @@ class Position
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -457,7 +457,7 @@ class Position
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -473,7 +473,7 @@ class Position
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -489,7 +489,7 @@ class Position
     {
         $this->firstName = $firstName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -505,7 +505,7 @@ class Position
     {
         $this->title = $title;
     }
-
+                                    
     /**
      * @return string
      */
@@ -521,7 +521,7 @@ class Position
     {
         $this->initials = $initials;
     }
-
+                                    
     /**
      * @return string
      */
@@ -537,7 +537,7 @@ class Position
     {
         $this->lastName = $lastName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -553,7 +553,7 @@ class Position
     {
         $this->functionType = $functionType;
     }
-
+                                    
     /**
      * @return string
      */
@@ -569,7 +569,7 @@ class Position
     {
         $this->functionDescription = $functionDescription;
     }
-
+                                    
     /**
      * @return string
      */
@@ -585,7 +585,7 @@ class Position
     {
         $this->functionTitle = $functionTitle;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -601,7 +601,7 @@ class Position
     {
         $this->functionStartDate = $functionStartDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -617,7 +617,7 @@ class Position
     {
         $this->functionRegistrationDate = $functionRegistrationDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -633,7 +633,7 @@ class Position
     {
         $this->functionEndDate = $functionEndDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -649,7 +649,7 @@ class Position
     {
         $this->functionAuthorization = $functionAuthorization;
     }
-
+                                    
     /**
      * @return string
      */
@@ -665,7 +665,7 @@ class Position
     {
         $this->functionAuthorizationDescription = $functionAuthorizationDescription;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -681,7 +681,7 @@ class Position
     {
         $this->functionAuthorizationStartDate = $functionAuthorizationStartDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -697,7 +697,7 @@ class Position
     {
         $this->functionAuthorizationSigningPower = $functionAuthorizationSigningPower;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -713,7 +713,7 @@ class Position
     {
         $this->functionAuthorizationEndDate = $functionAuthorizationEndDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -729,7 +729,7 @@ class Position
     {
         $this->authorizationDescription = $authorizationDescription;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -745,7 +745,7 @@ class Position
     {
         $this->authorizationStartDate = $authorizationStartDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -761,7 +761,7 @@ class Position
     {
         $this->authorizationEndDate = $authorizationEndDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -777,7 +777,7 @@ class Position
     {
         $this->inauguration = $inauguration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -793,7 +793,7 @@ class Position
     {
         $this->inaugurationFunction = $inaugurationFunction;
     }
-
+                                    
     /**
      * @return string
      */
@@ -809,7 +809,7 @@ class Position
     {
         $this->inaugurationDuration = $inaugurationDuration;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -825,7 +825,7 @@ class Position
     {
         $this->inaugurationDate = $inaugurationDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -841,7 +841,7 @@ class Position
     {
         $this->inaugurationBody = $inaugurationBody;
     }
-
+                                    
     /**
      * @return string
      */
@@ -857,7 +857,7 @@ class Position
     {
         $this->underReceivership = $underReceivership;
     }
-
+                                    
     /**
      * @return string
      */
@@ -873,7 +873,7 @@ class Position
     {
         $this->rightsAgainstThirdParties = $rightsAgainstThirdParties;
     }
-
+                                    
     /**
      * @return string
      */
@@ -889,7 +889,7 @@ class Position
     {
         $this->releaseOfCovenant = $releaseOfCovenant;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -905,7 +905,7 @@ class Position
     {
         $this->dateDeceased = $dateDeceased;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -921,7 +921,7 @@ class Position
     {
         $this->dateOfBirth = $dateOfBirth;
     }
-
+                                    
     /**
      * @return string
      */
@@ -937,7 +937,7 @@ class Position
     {
         $this->placeOfBirth = $placeOfBirth;
     }
-
+                                    
     /**
      * @return string
      */
@@ -953,7 +953,7 @@ class Position
     {
         $this->countryOfBirth = $countryOfBirth;
     }
-
+                                    
     /**
      * @return string
      */
@@ -969,7 +969,7 @@ class Position
     {
         $this->postcode = $postcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -985,7 +985,7 @@ class Position
     {
         $this->city = $city;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1001,7 +1001,7 @@ class Position
     {
         $this->street = $street;
     }
-
+                                    
     /**
      * @return int
      */
@@ -1017,7 +1017,7 @@ class Position
     {
         $this->houseNumber = $houseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1033,7 +1033,7 @@ class Position
     {
         $this->houseNumberAddition = $houseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -1049,7 +1049,7 @@ class Position
     {
         $this->country = $country;
     }
-
+                                    
     /**
      * @return array
      */
@@ -1065,7 +1065,7 @@ class Position
     {
         $this->telephoneNumbers = $telephoneNumbers;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -1081,7 +1081,7 @@ class Position
     {
         $this->dateSince = $dateSince;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -1097,7 +1097,7 @@ class Position
     {
         $this->dateJoined = $dateJoined;
     }
-
+                                    
     /**
      * @return string
      */

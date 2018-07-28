@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Structure
 {
-
+                        
     /**
      * @JMS\SerializedName("ultimate_parent")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class Structure
      * @var string
      */
     protected $ultimateParent;
-
+                                    
     /**
      * @JMS\SerializedName("number_of_subsidiaries")
      * @JMS\Type("integer")
@@ -29,7 +29,7 @@ class Structure
      * @var int
      */
     protected $numberOfSubsidiaries;
-
+                                    
     /**
      * @JMS\SerializedName("parent")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class Structure
      * @var string
      */
     protected $parent;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class Structure
     {
         $this->ultimateParent = $ultimateParent;
     }
-
+                                    
     /**
      * @return int
      */
@@ -70,7 +70,7 @@ class Structure
     {
         $this->numberOfSubsidiaries = $numberOfSubsidiaries;
     }
-
+                                    
     /**
      * @return string
      */

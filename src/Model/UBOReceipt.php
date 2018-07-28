@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOReceipt
 {
-
+                        
     /**
      * @JMS\SerializedName("total_price")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOReceipt
      * @var string
      */
     protected $totalPrice;
-
+                                    
     /**
      * @JMS\SerializedName("items")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\UBOReceiptItem>")
@@ -30,7 +30,7 @@ class UBOReceipt
      * @var UBOReceiptItem[]
      */
     protected $items;
-
+                                    
     /**
      * @return string
      */
@@ -46,7 +46,7 @@ class UBOReceipt
     {
         $this->totalPrice = $totalPrice;
     }
-
+                                    
     /**
      * @return UBOReceiptItem[]
      */

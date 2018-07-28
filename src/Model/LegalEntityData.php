@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class LegalEntityData
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class LegalEntityData
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("reference_date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -29,16 +29,16 @@ class LegalEntityData
      * @var \DateTime
      */
     protected $referenceDate;
-
+                                    
     /**
      * @JMS\SerializedName("legal_entity")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\LegalEntityV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var LegalEntityV3
      */
     protected $legalEntity;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class LegalEntityData
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -70,7 +70,7 @@ class LegalEntityData
     {
         $this->referenceDate = $referenceDate;
     }
-
+                                    
     /**
      * @return LegalEntityV3
      */

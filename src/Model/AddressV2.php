@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class AddressV2
 {
-
+                        
     /**
      * @JMS\SerializedName("postcode")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class AddressV2
      * @var string
      */
     protected $postcode;
-
+                                    
     /**
      * @JMS\SerializedName("city")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class AddressV2
      * @var string
      */
     protected $city;
-
+                                    
     /**
      * @JMS\SerializedName("street")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class AddressV2
      * @var string
      */
     protected $street;
-
+                                    
     /**
      * @JMS\SerializedName("house_number")
      * @JMS\Type("integer")
@@ -47,7 +47,7 @@ class AddressV2
      * @var int
      */
     protected $houseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("house_number_addition")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class AddressV2
      * @var string
      */
     protected $houseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("country")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class AddressV2
      * @var string
      */
     protected $country;
-
+                                    
     /**
      * @return string
      */
@@ -81,7 +81,7 @@ class AddressV2
     {
         $this->postcode = $postcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -97,7 +97,7 @@ class AddressV2
     {
         $this->city = $city;
     }
-
+                                    
     /**
      * @return string
      */
@@ -113,7 +113,7 @@ class AddressV2
     {
         $this->street = $street;
     }
-
+                                    
     /**
      * @return int
      */
@@ -129,7 +129,7 @@ class AddressV2
     {
         $this->houseNumber = $houseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -145,7 +145,7 @@ class AddressV2
     {
         $this->houseNumberAddition = $houseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */

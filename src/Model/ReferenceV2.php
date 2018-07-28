@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ReferenceV2
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class ReferenceV2
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class ReferenceV2
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class ReferenceV2
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("match_type")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class ReferenceV2
      * @var string
      */
     protected $matchType;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class ReferenceV2
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class ReferenceV2
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class ReferenceV2
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -83,7 +83,7 @@ class ReferenceV2
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("indication_economically_active")
      * @JMS\Type("boolean")
@@ -92,7 +92,7 @@ class ReferenceV2
      * @var bool
      */
     protected $indicationEconomicallyActive;
-
+                                    
     /**
      * @return string
      */
@@ -108,7 +108,7 @@ class ReferenceV2
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -124,7 +124,7 @@ class ReferenceV2
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -140,7 +140,7 @@ class ReferenceV2
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -156,7 +156,7 @@ class ReferenceV2
     {
         $this->matchType = $matchType;
     }
-
+                                    
     /**
      * @return string
      */
@@ -172,7 +172,7 @@ class ReferenceV2
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -188,7 +188,7 @@ class ReferenceV2
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return string
      */
@@ -204,7 +204,7 @@ class ReferenceV2
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -220,7 +220,7 @@ class ReferenceV2
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return bool
      */

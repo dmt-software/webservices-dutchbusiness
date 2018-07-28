@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOReceiptItem
 {
-
+                        
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOReceiptItem
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @JMS\SerializedName("quantity")
      * @JMS\Type("integer")
@@ -29,7 +29,7 @@ class UBOReceiptItem
      * @var int
      */
     protected $quantity;
-
+                                    
     /**
      * @JMS\SerializedName("unit_price")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class UBOReceiptItem
      * @var string
      */
     protected $unitPrice;
-
+                                    
     /**
      * @JMS\SerializedName("total_price")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class UBOReceiptItem
      * @var string
      */
     protected $totalPrice;
-
+                                    
     /**
      * @return string
      */
@@ -63,7 +63,7 @@ class UBOReceiptItem
     {
         $this->description = $description;
     }
-
+                                    
     /**
      * @return int
      */
@@ -79,7 +79,7 @@ class UBOReceiptItem
     {
         $this->quantity = $quantity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -95,7 +95,7 @@ class UBOReceiptItem
     {
         $this->unitPrice = $unitPrice;
     }
-
+                                    
     /**
      * @return string
      */

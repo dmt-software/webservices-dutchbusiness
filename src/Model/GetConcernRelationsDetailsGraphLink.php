@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class GetConcernRelationsDetailsGraphLink
 {
-
+                        
     /**
      * @JMS\SerializedName("source")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class GetConcernRelationsDetailsGraphLink
      * @var string
      */
     protected $source;
-
+                                    
     /**
      * @JMS\SerializedName("target")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class GetConcernRelationsDetailsGraphLink
      * @var string
      */
     protected $target;
-
+                                    
     /**
      * @JMS\SerializedName("type")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class GetConcernRelationsDetailsGraphLink
      * @var string
      */
     protected $type;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class GetConcernRelationsDetailsGraphLink
     {
         $this->source = $source;
     }
-
+                                    
     /**
      * @return string
      */
@@ -70,7 +70,7 @@ class GetConcernRelationsDetailsGraphLink
     {
         $this->target = $target;
     }
-
+                                    
     /**
      * @return string
      */

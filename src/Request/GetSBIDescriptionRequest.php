@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class GetSBIDescriptionRequest
+class GetSBIDescriptionRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("sbi_code")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class GetSBIDescriptionRequest
      * @var string
      */
     protected $sbiCode;
-
+                                    
     /**
      * @JMS\SerializedName("language")
      * @JMS\Type("string")
@@ -31,7 +32,7 @@ class GetSBIDescriptionRequest
      * @var string
      */
     protected $language;
-
+                                    
     /**
      * @return string
      */
@@ -47,7 +48,7 @@ class GetSBIDescriptionRequest
     {
         $this->sbiCode = $sbiCode;
     }
-
+                                    
     /**
      * @return string
      */

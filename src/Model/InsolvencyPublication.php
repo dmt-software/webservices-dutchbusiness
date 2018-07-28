@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class InsolvencyPublication
 {
-
+                        
     /**
      * @JMS\SerializedName("publication_id")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class InsolvencyPublication
      * @var string
      */
     protected $publicationId;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -29,16 +29,16 @@ class InsolvencyPublication
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @JMS\SerializedName("date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $date;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class InsolvencyPublication
     {
         $this->publicationId = $publicationId;
     }
-
+                                    
     /**
      * @return string
      */
@@ -70,7 +70,7 @@ class InsolvencyPublication
     {
         $this->description = $description;
     }
-
+                                    
     /**
      * @return DateV3
      */

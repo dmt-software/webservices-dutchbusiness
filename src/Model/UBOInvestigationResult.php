@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOInvestigationResult
 {
-
+                        
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOInvestigationResult
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UBOInvestigationResult
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("persons")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\UBOPerson>")
@@ -39,7 +39,7 @@ class UBOInvestigationResult
      * @var UBOPerson[]
      */
     protected $persons;
-
+                                    
     /**
      * @JMS\SerializedName("organisations")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\UBOOrganisation>")
@@ -49,16 +49,16 @@ class UBOInvestigationResult
      * @var UBOOrganisation[]
      */
     protected $organisations;
-
+                                    
     /**
      * @JMS\SerializedName("tree")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\UBOOrganizationNode")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var UBOOrganizationNode
      */
     protected $tree;
-
+                                    
     /**
      * @return string
      */
@@ -74,7 +74,7 @@ class UBOInvestigationResult
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -90,7 +90,7 @@ class UBOInvestigationResult
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return UBOPerson[]
      */
@@ -106,7 +106,7 @@ class UBOInvestigationResult
     {
         $this->persons = $persons;
     }
-
+                                    
     /**
      * @return UBOOrganisation[]
      */
@@ -122,7 +122,7 @@ class UBOInvestigationResult
     {
         $this->organisations = $organisations;
     }
-
+                                    
     /**
      * @return UBOOrganizationNode
      */

@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UpdateReferencePagedResult extends PagedResult
 {
-
+                                                
     /**
      * @JMS\SerializedName("results")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\UpdateReference>")

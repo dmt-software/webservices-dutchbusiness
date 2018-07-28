@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ExtractDataV3
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class ExtractDataV3
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("reference_date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -29,34 +29,34 @@ class ExtractDataV3
      * @var \DateTime
      */
     protected $referenceDate;
-
+                                    
     /**
      * @JMS\SerializedName("legal_entity")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\LegalEntityV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var LegalEntityV3
      */
     protected $legalEntity;
-
+                                    
     /**
      * @JMS\SerializedName("partnership")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\PartnershipV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var PartnershipV3
      */
     protected $partnership;
-
+                                    
     /**
      * @JMS\SerializedName("enterprise")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\EnterpriseV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var EnterpriseV3
      */
     protected $enterprise;
-
+                                    
     /**
      * @JMS\SerializedName("establishments")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\EstablishmentV3>")
@@ -66,7 +66,7 @@ class ExtractDataV3
      * @var EstablishmentV3[]
      */
     protected $establishments;
-
+                                    
     /**
      * @JMS\SerializedName("positions")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\PositionV3>")
@@ -76,7 +76,7 @@ class ExtractDataV3
      * @var PositionV3[]
      */
     protected $positions;
-
+                                    
     /**
      * @JMS\SerializedName("remarks")
      * @JMS\Type("array<string>")
@@ -86,7 +86,7 @@ class ExtractDataV3
      * @var array
      */
     protected $remarks;
-
+                                    
     /**
      * @return string
      */
@@ -102,7 +102,7 @@ class ExtractDataV3
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -118,7 +118,7 @@ class ExtractDataV3
     {
         $this->referenceDate = $referenceDate;
     }
-
+                                    
     /**
      * @return LegalEntityV3
      */
@@ -134,7 +134,7 @@ class ExtractDataV3
     {
         $this->legalEntity = $legalEntity;
     }
-
+                                    
     /**
      * @return PartnershipV3
      */
@@ -150,7 +150,7 @@ class ExtractDataV3
     {
         $this->partnership = $partnership;
     }
-
+                                    
     /**
      * @return EnterpriseV3
      */
@@ -166,7 +166,7 @@ class ExtractDataV3
     {
         $this->enterprise = $enterprise;
     }
-
+                                    
     /**
      * @return EstablishmentV3[]
      */
@@ -182,7 +182,7 @@ class ExtractDataV3
     {
         $this->establishments = $establishments;
     }
-
+                                    
     /**
      * @return PositionV3[]
      */
@@ -198,7 +198,7 @@ class ExtractDataV3
     {
         $this->positions = $positions;
     }
-
+                                    
     /**
      * @return array
      */

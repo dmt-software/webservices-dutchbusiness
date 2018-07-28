@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class MoneyV2
 {
-
+                        
     /**
      * @JMS\SerializedName("amount")
      * @JMS\Type("integer")
@@ -20,7 +20,7 @@ class MoneyV2
      * @var int
      */
     protected $amount;
-
+                                    
     /**
      * @JMS\SerializedName("currency")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class MoneyV2
      * @var string
      */
     protected $currency;
-
+                                    
     /**
      * @JMS\SerializedName("formatted")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class MoneyV2
      * @var string
      */
     protected $formatted;
-
+                                    
     /**
      * @return int
      */
@@ -54,7 +54,7 @@ class MoneyV2
     {
         $this->amount = $amount;
     }
-
+                                    
     /**
      * @return string
      */
@@ -70,7 +70,7 @@ class MoneyV2
     {
         $this->currency = $currency;
     }
-
+                                    
     /**
      * @return string
      */

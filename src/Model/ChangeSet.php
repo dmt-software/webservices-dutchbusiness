@@ -11,16 +11,16 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ChangeSet
 {
-
+                        
     /**
      * @JMS\SerializedName("period")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Period")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Period
      */
     protected $period;
-
+                                    
     /**
      * @JMS\SerializedName("changes")
      * @JMS\Type("array<string>")
@@ -30,7 +30,7 @@ class ChangeSet
      * @var array
      */
     protected $changes;
-
+                                    
     /**
      * @return Period
      */
@@ -46,7 +46,7 @@ class ChangeSet
     {
         $this->period = $period;
     }
-
+                                    
     /**
      * @return array
      */

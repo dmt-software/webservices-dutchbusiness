@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class GetExtractHistoryDocumentDataRequest
+class GetExtractHistoryDocumentDataRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("extract_id")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class GetExtractHistoryDocumentDataRequest
      * @var string
      */
     protected $extractId;
-
+                                    
     /**
      * @return string
      */

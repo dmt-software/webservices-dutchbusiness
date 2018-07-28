@@ -11,34 +11,34 @@ use JMS\Serializer\Annotation as JMS;
  */
 class FormattedAddress
 {
-
+                        
     /**
      * @JMS\SerializedName("original")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV3
      */
     protected $original;
-
+                                    
     /**
      * @JMS\SerializedName("official")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV3
      */
     protected $official;
-
+                                    
     /**
      * @JMS\SerializedName("formatted")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV3
      */
     protected $formatted;
-
+                                    
     /**
      * @return AddressV3
      */
@@ -54,7 +54,7 @@ class FormattedAddress
     {
         $this->original = $original;
     }
-
+                                    
     /**
      * @return AddressV3
      */
@@ -70,7 +70,7 @@ class FormattedAddress
     {
         $this->official = $official;
     }
-
+                                    
     /**
      * @return AddressV3
      */

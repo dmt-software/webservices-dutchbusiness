@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UpdateSubscription
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UpdateSubscription
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UpdateSubscription
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("up_to_date")
      * @JMS\Type("boolean")
@@ -38,7 +38,7 @@ class UpdateSubscription
      * @var bool
      */
     protected $upToDate;
-
+                                    
     /**
      * @JMS\SerializedName("pending_updates")
      * @JMS\Type("array<string>")
@@ -48,7 +48,7 @@ class UpdateSubscription
      * @var array
      */
     protected $pendingUpdates;
-
+                                    
     /**
      * @return string
      */
@@ -64,7 +64,7 @@ class UpdateSubscription
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -80,7 +80,7 @@ class UpdateSubscription
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -96,7 +96,7 @@ class UpdateSubscription
     {
         $this->upToDate = $upToDate;
     }
-
+                                    
     /**
      * @return array
      */

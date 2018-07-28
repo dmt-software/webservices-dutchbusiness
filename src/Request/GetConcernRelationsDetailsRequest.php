@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,8 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class GetConcernRelationsDetailsRequest
+class GetConcernRelationsDetailsRequest implements RequestInterface
 {
-
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +22,7 @@ class GetConcernRelationsDetailsRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("include_source")
      * @JMS\Type("boolean")
@@ -31,7 +31,7 @@ class GetConcernRelationsDetailsRequest
      * @var bool
      */
     protected $includeSource;
-
+                                    
     /**
      * @return string
      */
@@ -47,7 +47,7 @@ class GetConcernRelationsDetailsRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return bool
      */

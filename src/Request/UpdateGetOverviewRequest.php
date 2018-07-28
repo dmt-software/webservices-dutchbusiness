@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UpdateGetOverviewRequest
+class UpdateGetOverviewRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -22,7 +23,7 @@ class UpdateGetOverviewRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @return int
      */

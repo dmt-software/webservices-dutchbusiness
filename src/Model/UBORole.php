@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBORole
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBORole
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("title")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UBORole
      * @var string
      */
     protected $title;
-
+                                    
     /**
      * @JMS\SerializedName("role_type")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class UBORole
      * @var string
      */
     protected $roleType;
-
+                                    
     /**
      * @JMS\SerializedName("competency")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class UBORole
      * @var string
      */
     protected $competency;
-
+                                    
     /**
      * @JMS\SerializedName("start_role_date")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -56,7 +56,7 @@ class UBORole
      * @var \DateTime
      */
     protected $startRoleDate;
-
+                                    
     /**
      * @return string
      */
@@ -72,7 +72,7 @@ class UBORole
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -88,7 +88,7 @@ class UBORole
     {
         $this->title = $title;
     }
-
+                                    
     /**
      * @return string
      */
@@ -104,7 +104,7 @@ class UBORole
     {
         $this->roleType = $roleType;
     }
-
+                                    
     /**
      * @return string
      */
@@ -120,7 +120,7 @@ class UBORole
     {
         $this->competency = $competency;
     }
-
+                                    
     /**
      * @return \DateTime
      */

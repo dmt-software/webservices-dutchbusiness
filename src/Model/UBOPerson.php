@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOPerson
 {
-
+                        
     /**
      * @JMS\SerializedName("key")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOPerson
      * @var string
      */
     protected $key;
-
+                                    
     /**
      * @JMS\SerializedName("first_name")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UBOPerson
      * @var string
      */
     protected $firstName;
-
+                                    
     /**
      * @JMS\SerializedName("middle_names")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class UBOPerson
      * @var string
      */
     protected $middleNames;
-
+                                    
     /**
      * @JMS\SerializedName("last_name")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class UBOPerson
      * @var string
      */
     protected $lastName;
-
+                                    
     /**
      * @JMS\SerializedName("gender")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class UBOPerson
      * @var string
      */
     protected $gender;
-
+                                    
     /**
      * @JMS\SerializedName("date_of_birth")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -65,7 +65,7 @@ class UBOPerson
      * @var \DateTime
      */
     protected $dateOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("place_of_birth")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class UBOPerson
      * @var string
      */
     protected $placeOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("country_of_birth")
      * @JMS\Type("string")
@@ -83,7 +83,7 @@ class UBOPerson
      * @var string
      */
     protected $countryOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("date_of_death")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -92,7 +92,7 @@ class UBOPerson
      * @var \DateTime
      */
     protected $dateOfDeath;
-
+                                    
     /**
      * @JMS\SerializedName("roles")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\UBORole>")
@@ -102,7 +102,7 @@ class UBOPerson
      * @var UBORole[]
      */
     protected $roles;
-
+                                    
     /**
      * @return string
      */
@@ -118,7 +118,7 @@ class UBOPerson
     {
         $this->key = $key;
     }
-
+                                    
     /**
      * @return string
      */
@@ -134,7 +134,7 @@ class UBOPerson
     {
         $this->firstName = $firstName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -150,7 +150,7 @@ class UBOPerson
     {
         $this->middleNames = $middleNames;
     }
-
+                                    
     /**
      * @return string
      */
@@ -166,7 +166,7 @@ class UBOPerson
     {
         $this->lastName = $lastName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -182,7 +182,7 @@ class UBOPerson
     {
         $this->gender = $gender;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -198,7 +198,7 @@ class UBOPerson
     {
         $this->dateOfBirth = $dateOfBirth;
     }
-
+                                    
     /**
      * @return string
      */
@@ -214,7 +214,7 @@ class UBOPerson
     {
         $this->placeOfBirth = $placeOfBirth;
     }
-
+                                    
     /**
      * @return string
      */
@@ -230,7 +230,7 @@ class UBOPerson
     {
         $this->countryOfBirth = $countryOfBirth;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -246,7 +246,7 @@ class UBOPerson
     {
         $this->dateOfDeath = $dateOfDeath;
     }
-
+                                    
     /**
      * @return UBORole[]
      */

@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class PersonnelInfoV2
 {
-
+                        
     /**
      * @JMS\SerializedName("fulltime")
      * @JMS\Type("integer")
@@ -20,7 +20,7 @@ class PersonnelInfoV2
      * @var int
      */
     protected $fulltime;
-
+                                    
     /**
      * @JMS\SerializedName("parttime")
      * @JMS\Type("integer")
@@ -29,7 +29,7 @@ class PersonnelInfoV2
      * @var int
      */
     protected $parttime;
-
+                                    
     /**
      * @JMS\SerializedName("total")
      * @JMS\Type("integer")
@@ -38,7 +38,7 @@ class PersonnelInfoV2
      * @var int
      */
     protected $total;
-
+                                    
     /**
      * @return int
      */
@@ -54,7 +54,7 @@ class PersonnelInfoV2
     {
         $this->fulltime = $fulltime;
     }
-
+                                    
     /**
      * @return int
      */
@@ -70,7 +70,7 @@ class PersonnelInfoV2
     {
         $this->parttime = $parttime;
     }
-
+                                    
     /**
      * @return int
      */

@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOOrganizationNode
 {
-
+                        
     /**
      * @JMS\SerializedName("level")
      * @JMS\Type("integer")
@@ -20,7 +20,7 @@ class UBOOrganizationNode
      * @var int
      */
     protected $level;
-
+                                    
     /**
      * @JMS\SerializedName("id")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UBOOrganizationNode
      * @var string
      */
     protected $id;
-
+                                    
     /**
      * @JMS\SerializedName("type")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class UBOOrganizationNode
      * @var string
      */
     protected $type;
-
+                                    
     /**
      * @JMS\SerializedName("role_type")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class UBOOrganizationNode
      * @var string
      */
     protected $roleType;
-
+                                    
     /**
      * @JMS\SerializedName("registered_in")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class UBOOrganizationNode
      * @var string
      */
     protected $registeredIn;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class UBOOrganizationNode
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("parents")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\UBOOrganizationNode>")
@@ -75,7 +75,7 @@ class UBOOrganizationNode
      * @var UBOOrganizationNode[]
      */
     protected $parents;
-
+                                    
     /**
      * @return int
      */
@@ -91,7 +91,7 @@ class UBOOrganizationNode
     {
         $this->level = $level;
     }
-
+                                    
     /**
      * @return string
      */
@@ -107,7 +107,7 @@ class UBOOrganizationNode
     {
         $this->id = $id;
     }
-
+                                    
     /**
      * @return string
      */
@@ -123,7 +123,7 @@ class UBOOrganizationNode
     {
         $this->type = $type;
     }
-
+                                    
     /**
      * @return string
      */
@@ -139,7 +139,7 @@ class UBOOrganizationNode
     {
         $this->roleType = $roleType;
     }
-
+                                    
     /**
      * @return string
      */
@@ -155,7 +155,7 @@ class UBOOrganizationNode
     {
         $this->registeredIn = $registeredIn;
     }
-
+                                    
     /**
      * @return string
      */
@@ -171,7 +171,7 @@ class UBOOrganizationNode
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return UBOOrganizationNode[]
      */

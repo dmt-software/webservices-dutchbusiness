@@ -2,19 +2,20 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
  * Class UpdateAddDossierRequest
  *
- * Add a dossier to the list of dossiers for which the user (the user whose credentials are used to make the call) wants
- * to receive updates
+ * Add a dossier to the list of dossiers for which the user (the user whose credentials are used to make the call)
+ * wants to receive updates
  *
  * @JMS\AccessType("public_method")
  */
-class UpdateAddDossierRequest
+class UpdateAddDossierRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -23,7 +24,7 @@ class UpdateAddDossierRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -32,7 +33,7 @@ class UpdateAddDossierRequest
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @return string
      */
@@ -48,7 +49,7 @@ class UpdateAddDossierRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */

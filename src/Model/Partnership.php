@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Partnership
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class Partnership
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("rsin_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class Partnership
      * @var string
      */
     protected $rsinNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class Partnership
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("registration")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class Partnership
      * @var string
      */
     protected $registration;
-
+                                    
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class Partnership
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -65,34 +65,34 @@ class Partnership
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("founding_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $foundingDate;
-
+                                    
     /**
      * @JMS\SerializedName("dissolution_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dissolutionDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $functionStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("duration")
      * @JMS\Type("string")
@@ -101,7 +101,7 @@ class Partnership
      * @var string
      */
     protected $duration;
-
+                                    
     /**
      * @JMS\SerializedName("limited_partnership_capital")
      * @JMS\Type("integer")
@@ -110,7 +110,7 @@ class Partnership
      * @var int
      */
     protected $limitedPartnershipCapital;
-
+                                    
     /**
      * @JMS\SerializedName("limited_partnership_capital_currency")
      * @JMS\Type("string")
@@ -119,7 +119,7 @@ class Partnership
      * @var string
      */
     protected $limitedPartnershipCapitalCurrency;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_postcode")
      * @JMS\Type("string")
@@ -128,7 +128,7 @@ class Partnership
      * @var string
      */
     protected $establishmentPostcode;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -137,7 +137,7 @@ class Partnership
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -146,7 +146,7 @@ class Partnership
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number")
      * @JMS\Type("integer")
@@ -155,7 +155,7 @@ class Partnership
      * @var int
      */
     protected $establishmentHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number_addition")
      * @JMS\Type("string")
@@ -164,7 +164,7 @@ class Partnership
      * @var string
      */
     protected $establishmentHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_country")
      * @JMS\Type("string")
@@ -173,7 +173,7 @@ class Partnership
      * @var string
      */
     protected $establishmentCountry;
-
+                                    
     /**
      * @JMS\SerializedName("silent_partners")
      * @JMS\Type("integer")
@@ -182,7 +182,7 @@ class Partnership
      * @var int
      */
     protected $silentPartners;
-
+                                    
     /**
      * @return string
      */
@@ -198,7 +198,7 @@ class Partnership
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -214,7 +214,7 @@ class Partnership
     {
         $this->rsinNumber = $rsinNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -230,7 +230,7 @@ class Partnership
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -246,7 +246,7 @@ class Partnership
     {
         $this->registration = $registration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -262,7 +262,7 @@ class Partnership
     {
         $this->status = $status;
     }
-
+                                    
     /**
      * @return string
      */
@@ -278,7 +278,7 @@ class Partnership
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -294,7 +294,7 @@ class Partnership
     {
         $this->foundingDate = $foundingDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -310,7 +310,7 @@ class Partnership
     {
         $this->dissolutionDate = $dissolutionDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -326,7 +326,7 @@ class Partnership
     {
         $this->functionStartDate = $functionStartDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -342,7 +342,7 @@ class Partnership
     {
         $this->duration = $duration;
     }
-
+                                    
     /**
      * @return int
      */
@@ -358,7 +358,7 @@ class Partnership
     {
         $this->limitedPartnershipCapital = $limitedPartnershipCapital;
     }
-
+                                    
     /**
      * @return string
      */
@@ -374,7 +374,7 @@ class Partnership
     {
         $this->limitedPartnershipCapitalCurrency = $limitedPartnershipCapitalCurrency;
     }
-
+                                    
     /**
      * @return string
      */
@@ -390,7 +390,7 @@ class Partnership
     {
         $this->establishmentPostcode = $establishmentPostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -406,7 +406,7 @@ class Partnership
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -422,7 +422,7 @@ class Partnership
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -438,7 +438,7 @@ class Partnership
     {
         $this->establishmentHouseNumber = $establishmentHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -454,7 +454,7 @@ class Partnership
     {
         $this->establishmentHouseNumberAddition = $establishmentHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -470,7 +470,7 @@ class Partnership
     {
         $this->establishmentCountry = $establishmentCountry;
     }
-
+                                    
     /**
      * @return int
      */

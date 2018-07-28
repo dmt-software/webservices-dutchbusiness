@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UpdateGetDossiersRequest
+class UpdateGetDossiersRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("update_types")
      * @JMS\Type("array<string>")
@@ -23,7 +24,7 @@ class UpdateGetDossiersRequest
      * @var array
      */
     protected $updateTypes;
-
+                                    
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -32,7 +33,7 @@ class UpdateGetDossiersRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @return array
      */
@@ -48,7 +49,7 @@ class UpdateGetDossiersRequest
     {
         $this->updateTypes = $updateTypes;
     }
-
+                                    
     /**
      * @return int
      */

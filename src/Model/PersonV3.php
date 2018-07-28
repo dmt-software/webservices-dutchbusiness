@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class PersonV3
 {
-
+                        
     /**
      * @JMS\SerializedName("full_name")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class PersonV3
      * @var string
      */
     protected $fullName;
-
+                                    
     /**
      * @JMS\SerializedName("first_name")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class PersonV3
      * @var string
      */
     protected $firstName;
-
+                                    
     /**
      * @JMS\SerializedName("title")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class PersonV3
      * @var string
      */
     protected $title;
-
+                                    
     /**
      * @JMS\SerializedName("initials")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class PersonV3
      * @var string
      */
     protected $initials;
-
+                                    
     /**
      * @JMS\SerializedName("last_name")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class PersonV3
      * @var string
      */
     protected $lastName;
-
+                                    
     /**
      * @JMS\SerializedName("gender")
      * @JMS\Type("string")
@@ -65,25 +65,25 @@ class PersonV3
      * @var string
      */
     protected $gender;
-
+                                    
     /**
      * @JMS\SerializedName("date_deceased")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $dateDeceased;
-
+                                    
     /**
      * @JMS\SerializedName("date_of_birth")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $dateOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("place_of_birth")
      * @JMS\Type("string")
@@ -92,7 +92,7 @@ class PersonV3
      * @var string
      */
     protected $placeOfBirth;
-
+                                    
     /**
      * @JMS\SerializedName("country_of_birth")
      * @JMS\Type("string")
@@ -101,7 +101,7 @@ class PersonV3
      * @var string
      */
     protected $countryOfBirth;
-
+                                    
     /**
      * @return string
      */
@@ -117,7 +117,7 @@ class PersonV3
     {
         $this->fullName = $fullName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -133,7 +133,7 @@ class PersonV3
     {
         $this->firstName = $firstName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -149,7 +149,7 @@ class PersonV3
     {
         $this->title = $title;
     }
-
+                                    
     /**
      * @return string
      */
@@ -165,7 +165,7 @@ class PersonV3
     {
         $this->initials = $initials;
     }
-
+                                    
     /**
      * @return string
      */
@@ -181,7 +181,7 @@ class PersonV3
     {
         $this->lastName = $lastName;
     }
-
+                                    
     /**
      * @return string
      */
@@ -197,7 +197,7 @@ class PersonV3
     {
         $this->gender = $gender;
     }
-
+                                    
     /**
      * @return DateV3
      */
@@ -213,7 +213,7 @@ class PersonV3
     {
         $this->dateDeceased = $dateDeceased;
     }
-
+                                    
     /**
      * @return DateV3
      */
@@ -229,7 +229,7 @@ class PersonV3
     {
         $this->dateOfBirth = $dateOfBirth;
     }
-
+                                    
     /**
      * @return string
      */
@@ -245,7 +245,7 @@ class PersonV3
     {
         $this->placeOfBirth = $placeOfBirth;
     }
-
+                                    
     /**
      * @return string
      */

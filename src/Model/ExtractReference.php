@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ExtractReference
 {
-
+                        
     /**
      * @JMS\SerializedName("extract_id")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class ExtractReference
      * @var string
      */
     protected $extractId;
-
+                                    
     /**
      * @JMS\SerializedName("document_date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -29,16 +29,16 @@ class ExtractReference
      * @var \DateTime
      */
     protected $documentDate;
-
+                                    
     /**
      * @JMS\SerializedName("change_set")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\ExtractChangeSet")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var ExtractChangeSet
      */
     protected $changeSet;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class ExtractReference
     {
         $this->extractId = $extractId;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -70,7 +70,7 @@ class ExtractReference
     {
         $this->documentDate = $documentDate;
     }
-
+                                    
     /**
      * @return ExtractChangeSet
      */

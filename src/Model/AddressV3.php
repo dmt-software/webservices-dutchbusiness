@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class AddressV3
 {
-
+                        
     /**
      * @JMS\SerializedName("address")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class AddressV3
      * @var string
      */
     protected $address;
-
+                                    
     /**
      * @JMS\SerializedName("postcode")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class AddressV3
      * @var string
      */
     protected $postcode;
-
+                                    
     /**
      * @JMS\SerializedName("city")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class AddressV3
      * @var string
      */
     protected $city;
-
+                                    
     /**
      * @JMS\SerializedName("street")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class AddressV3
      * @var string
      */
     protected $street;
-
+                                    
     /**
      * @JMS\SerializedName("house_number")
      * @JMS\Type("integer")
@@ -56,7 +56,7 @@ class AddressV3
      * @var int
      */
     protected $houseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("house_number_addition")
      * @JMS\Type("string")
@@ -65,7 +65,7 @@ class AddressV3
      * @var string
      */
     protected $houseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("country")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class AddressV3
      * @var string
      */
     protected $country;
-
+                                    
     /**
      * @return string
      */
@@ -90,7 +90,7 @@ class AddressV3
     {
         $this->address = $address;
     }
-
+                                    
     /**
      * @return string
      */
@@ -106,7 +106,7 @@ class AddressV3
     {
         $this->postcode = $postcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -122,7 +122,7 @@ class AddressV3
     {
         $this->city = $city;
     }
-
+                                    
     /**
      * @return string
      */
@@ -138,7 +138,7 @@ class AddressV3
     {
         $this->street = $street;
     }
-
+                                    
     /**
      * @return int
      */
@@ -154,7 +154,7 @@ class AddressV3
     {
         $this->houseNumber = $houseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -170,7 +170,7 @@ class AddressV3
     {
         $this->houseNumberAddition = $houseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */

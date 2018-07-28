@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Period
 {
-
+                        
     /**
      * @JMS\SerializedName("start_date")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -20,7 +20,7 @@ class Period
      * @var \DateTime
      */
     protected $startDate;
-
+                                    
     /**
      * @JMS\SerializedName("end_date")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -29,7 +29,7 @@ class Period
      * @var \DateTime
      */
     protected $endDate;
-
+                                    
     /**
      * @return \DateTime
      */
@@ -45,7 +45,7 @@ class Period
     {
         $this->startDate = $startDate;
     }
-
+                                    
     /**
      * @return \DateTime
      */

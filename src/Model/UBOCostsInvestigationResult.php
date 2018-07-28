@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOCostsInvestigationResult
 {
-
+                        
     /**
      * @JMS\SerializedName("token")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOCostsInvestigationResult
      * @var string
      */
     protected $token;
-
+                                    
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -29,25 +29,25 @@ class UBOCostsInvestigationResult
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @JMS\SerializedName("receipt")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\UBOReceipt")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var UBOReceipt
      */
     protected $receipt;
-
+                                    
     /**
      * @JMS\SerializedName("payment")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\UBOPayment")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var UBOPayment
      */
     protected $payment;
-
+                                    
     /**
      * @return string
      */
@@ -63,7 +63,7 @@ class UBOCostsInvestigationResult
     {
         $this->token = $token;
     }
-
+                                    
     /**
      * @return string
      */
@@ -79,7 +79,7 @@ class UBOCostsInvestigationResult
     {
         $this->status = $status;
     }
-
+                                    
     /**
      * @return UBOReceipt
      */
@@ -95,7 +95,7 @@ class UBOCostsInvestigationResult
     {
         $this->receipt = $receipt;
     }
-
+                                    
     /**
      * @return UBOPayment
      */

@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class GetConcernRelationsDetailsResult
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,16 +20,16 @@ class GetConcernRelationsDetailsResult
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("graph")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\GetConcernRelationsDetailsGraph")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var GetConcernRelationsDetailsGraph
      */
     protected $graph;
-
+                                    
     /**
      * @JMS\SerializedName("pdf")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class GetConcernRelationsDetailsResult
      * @var string
      */
     protected $pdf;
-
+                                    
     /**
      * @JMS\SerializedName("source")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class GetConcernRelationsDetailsResult
      * @var string
      */
     protected $source;
-
+                                    
     /**
      * @return string
      */
@@ -63,7 +63,7 @@ class GetConcernRelationsDetailsResult
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return GetConcernRelationsDetailsGraph
      */
@@ -79,7 +79,7 @@ class GetConcernRelationsDetailsResult
     {
         $this->graph = $graph;
     }
-
+                                    
     /**
      * @return string
      */
@@ -95,7 +95,7 @@ class GetConcernRelationsDetailsResult
     {
         $this->pdf = $pdf;
     }
-
+                                    
     /**
      * @return string
      */

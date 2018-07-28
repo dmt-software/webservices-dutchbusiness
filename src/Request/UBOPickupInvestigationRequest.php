@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UBOPickupInvestigationRequest
+class UBOPickupInvestigationRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("token")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class UBOPickupInvestigationRequest
      * @var string
      */
     protected $token;
-
+                                    
     /**
      * @JMS\SerializedName("include_source")
      * @JMS\Type("boolean")
@@ -31,7 +32,7 @@ class UBOPickupInvestigationRequest
      * @var bool
      */
     protected $includeSource;
-
+                                    
     /**
      * @return string
      */
@@ -47,7 +48,7 @@ class UBOPickupInvestigationRequest
     {
         $this->token = $token;
     }
-
+                                    
     /**
      * @return bool
      */

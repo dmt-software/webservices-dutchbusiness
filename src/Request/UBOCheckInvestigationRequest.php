@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UBOCheckInvestigationRequest
+class UBOCheckInvestigationRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("token")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class UBOCheckInvestigationRequest
      * @var string
      */
     protected $token;
-
+                                    
     /**
      * @return string
      */

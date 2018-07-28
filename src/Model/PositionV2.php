@@ -11,52 +11,52 @@ use JMS\Serializer\Annotation as JMS;
  */
 class PositionV2
 {
-
+                        
     /**
      * @JMS\SerializedName("functionary")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\PersonV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var PersonV2
      */
     protected $functionary;
-
+                                    
     /**
      * @JMS\SerializedName("organisation")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\OrganizationReferenceV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var OrganizationReferenceV2
      */
     protected $organisation;
-
+                                    
     /**
      * @JMS\SerializedName("residential_address")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV2
      */
     protected $residentialAddress;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_address")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV2
      */
     protected $correspondenceAddress;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_address")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV2
      */
     protected $establishmentAddress;
-
+                                    
     /**
      * @JMS\SerializedName("longest_serving")
      * @JMS\Type("boolean")
@@ -65,7 +65,7 @@ class PositionV2
      * @var bool
      */
     protected $longestServing;
-
+                                    
     /**
      * @JMS\SerializedName("function_type")
      * @JMS\Type("string")
@@ -74,7 +74,7 @@ class PositionV2
      * @var string
      */
     protected $functionType;
-
+                                    
     /**
      * @JMS\SerializedName("function_description")
      * @JMS\Type("string")
@@ -83,7 +83,7 @@ class PositionV2
      * @var string
      */
     protected $functionDescription;
-
+                                    
     /**
      * @JMS\SerializedName("function_title")
      * @JMS\Type("string")
@@ -92,34 +92,34 @@ class PositionV2
      * @var string
      */
     protected $functionTitle;
-
+                                    
     /**
      * @JMS\SerializedName("function_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $functionStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_registration_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $functionRegistrationDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $functionEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization")
      * @JMS\Type("string")
@@ -128,7 +128,7 @@ class PositionV2
      * @var string
      */
     protected $functionAuthorization;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_description")
      * @JMS\Type("string")
@@ -137,16 +137,16 @@ class PositionV2
      * @var string
      */
     protected $functionAuthorizationDescription;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $functionAuthorizationStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_signing_power")
      * @JMS\Type("string")
@@ -155,16 +155,16 @@ class PositionV2
      * @var string
      */
     protected $functionAuthorizationSigningPower;
-
+                                    
     /**
      * @JMS\SerializedName("function_authorization_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $functionAuthorizationEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_description")
      * @JMS\Type("string")
@@ -173,7 +173,7 @@ class PositionV2
      * @var string
      */
     protected $authorizationDescription;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_establishment_number")
      * @JMS\Type("string")
@@ -182,25 +182,25 @@ class PositionV2
      * @var string
      */
     protected $authorizationEstablishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_start_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $authorizationStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_end_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $authorizationEndDate;
-
+                                    
     /**
      * @JMS\SerializedName("authorization_constraints")
      * @JMS\Type("array<string>")
@@ -210,7 +210,7 @@ class PositionV2
      * @var array
      */
     protected $authorizationConstraints;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration")
      * @JMS\Type("string")
@@ -219,7 +219,7 @@ class PositionV2
      * @var string
      */
     protected $inauguration;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_function")
      * @JMS\Type("string")
@@ -228,7 +228,7 @@ class PositionV2
      * @var string
      */
     protected $inaugurationFunction;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_duration")
      * @JMS\Type("string")
@@ -237,16 +237,16 @@ class PositionV2
      * @var string
      */
     protected $inaugurationDuration;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $inaugurationDate;
-
+                                    
     /**
      * @JMS\SerializedName("inauguration_body")
      * @JMS\Type("string")
@@ -255,7 +255,7 @@ class PositionV2
      * @var string
      */
     protected $inaugurationBody;
-
+                                    
     /**
      * @JMS\SerializedName("under_receivership")
      * @JMS\Type("string")
@@ -264,7 +264,7 @@ class PositionV2
      * @var string
      */
     protected $underReceivership;
-
+                                    
     /**
      * @JMS\SerializedName("rights_against_third_parties")
      * @JMS\Type("string")
@@ -273,7 +273,7 @@ class PositionV2
      * @var string
      */
     protected $rightsAgainstThirdParties;
-
+                                    
     /**
      * @JMS\SerializedName("release_of_covenant")
      * @JMS\Type("string")
@@ -282,25 +282,25 @@ class PositionV2
      * @var string
      */
     protected $releaseOfCovenant;
-
+                                    
     /**
      * @JMS\SerializedName("date_since")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $dateSince;
-
+                                    
     /**
      * @JMS\SerializedName("date_joined")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV2")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV2
      */
     protected $dateJoined;
-
+                                    
     /**
      * @JMS\SerializedName("remarks")
      * @JMS\Type("array<string>")
@@ -310,7 +310,7 @@ class PositionV2
      * @var array
      */
     protected $remarks;
-
+                                    
     /**
      * @return PersonV2
      */
@@ -326,7 +326,7 @@ class PositionV2
     {
         $this->functionary = $functionary;
     }
-
+                                    
     /**
      * @return OrganizationReferenceV2
      */
@@ -342,7 +342,7 @@ class PositionV2
     {
         $this->organisation = $organisation;
     }
-
+                                    
     /**
      * @return AddressV2
      */
@@ -358,7 +358,7 @@ class PositionV2
     {
         $this->residentialAddress = $residentialAddress;
     }
-
+                                    
     /**
      * @return AddressV2
      */
@@ -374,7 +374,7 @@ class PositionV2
     {
         $this->correspondenceAddress = $correspondenceAddress;
     }
-
+                                    
     /**
      * @return AddressV2
      */
@@ -390,7 +390,7 @@ class PositionV2
     {
         $this->establishmentAddress = $establishmentAddress;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -406,7 +406,7 @@ class PositionV2
     {
         $this->longestServing = $longestServing;
     }
-
+                                    
     /**
      * @return string
      */
@@ -422,7 +422,7 @@ class PositionV2
     {
         $this->functionType = $functionType;
     }
-
+                                    
     /**
      * @return string
      */
@@ -438,7 +438,7 @@ class PositionV2
     {
         $this->functionDescription = $functionDescription;
     }
-
+                                    
     /**
      * @return string
      */
@@ -454,7 +454,7 @@ class PositionV2
     {
         $this->functionTitle = $functionTitle;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -470,7 +470,7 @@ class PositionV2
     {
         $this->functionStartDate = $functionStartDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -486,7 +486,7 @@ class PositionV2
     {
         $this->functionRegistrationDate = $functionRegistrationDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -502,7 +502,7 @@ class PositionV2
     {
         $this->functionEndDate = $functionEndDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -518,7 +518,7 @@ class PositionV2
     {
         $this->functionAuthorization = $functionAuthorization;
     }
-
+                                    
     /**
      * @return string
      */
@@ -534,7 +534,7 @@ class PositionV2
     {
         $this->functionAuthorizationDescription = $functionAuthorizationDescription;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -550,7 +550,7 @@ class PositionV2
     {
         $this->functionAuthorizationStartDate = $functionAuthorizationStartDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -566,7 +566,7 @@ class PositionV2
     {
         $this->functionAuthorizationSigningPower = $functionAuthorizationSigningPower;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -582,7 +582,7 @@ class PositionV2
     {
         $this->functionAuthorizationEndDate = $functionAuthorizationEndDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -598,7 +598,7 @@ class PositionV2
     {
         $this->authorizationDescription = $authorizationDescription;
     }
-
+                                    
     /**
      * @return string
      */
@@ -614,7 +614,7 @@ class PositionV2
     {
         $this->authorizationEstablishmentNumber = $authorizationEstablishmentNumber;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -630,7 +630,7 @@ class PositionV2
     {
         $this->authorizationStartDate = $authorizationStartDate;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -646,7 +646,7 @@ class PositionV2
     {
         $this->authorizationEndDate = $authorizationEndDate;
     }
-
+                                    
     /**
      * @return array
      */
@@ -662,7 +662,7 @@ class PositionV2
     {
         $this->authorizationConstraints = $authorizationConstraints;
     }
-
+                                    
     /**
      * @return string
      */
@@ -678,7 +678,7 @@ class PositionV2
     {
         $this->inauguration = $inauguration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -694,7 +694,7 @@ class PositionV2
     {
         $this->inaugurationFunction = $inaugurationFunction;
     }
-
+                                    
     /**
      * @return string
      */
@@ -710,7 +710,7 @@ class PositionV2
     {
         $this->inaugurationDuration = $inaugurationDuration;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -726,7 +726,7 @@ class PositionV2
     {
         $this->inaugurationDate = $inaugurationDate;
     }
-
+                                    
     /**
      * @return string
      */
@@ -742,7 +742,7 @@ class PositionV2
     {
         $this->inaugurationBody = $inaugurationBody;
     }
-
+                                    
     /**
      * @return string
      */
@@ -758,7 +758,7 @@ class PositionV2
     {
         $this->underReceivership = $underReceivership;
     }
-
+                                    
     /**
      * @return string
      */
@@ -774,7 +774,7 @@ class PositionV2
     {
         $this->rightsAgainstThirdParties = $rightsAgainstThirdParties;
     }
-
+                                    
     /**
      * @return string
      */
@@ -790,7 +790,7 @@ class PositionV2
     {
         $this->releaseOfCovenant = $releaseOfCovenant;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -806,7 +806,7 @@ class PositionV2
     {
         $this->dateSince = $dateSince;
     }
-
+                                    
     /**
      * @return DateV2
      */
@@ -822,7 +822,7 @@ class PositionV2
     {
         $this->dateJoined = $dateJoined;
     }
-
+                                    
     /**
      * @return array
      */

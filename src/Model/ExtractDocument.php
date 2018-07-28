@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class ExtractDocument
 {
-
+                        
     /**
      * @JMS\SerializedName("document")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class ExtractDocument
      * @var string
      */
     protected $document;
-
+                                    
     /**
      * @JMS\SerializedName("document_date")
      * @JMS\Type("DateTime<'Y-m-d\TH:i:sP'>")
@@ -29,7 +29,7 @@ class ExtractDocument
      * @var \DateTime
      */
     protected $documentDate;
-
+                                    
     /**
      * @return string
      */
@@ -45,7 +45,7 @@ class ExtractDocument
     {
         $this->document = $document;
     }
-
+                                    
     /**
      * @return \DateTime
      */

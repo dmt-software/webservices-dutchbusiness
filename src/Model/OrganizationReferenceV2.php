@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class OrganizationReferenceV2
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class OrganizationReferenceV2
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("registration")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class OrganizationReferenceV2
      * @var string
      */
     protected $registration;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class OrganizationReferenceV2
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -48,7 +48,7 @@ class OrganizationReferenceV2
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @return string
      */
@@ -64,7 +64,7 @@ class OrganizationReferenceV2
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -80,7 +80,7 @@ class OrganizationReferenceV2
     {
         $this->registration = $registration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -96,7 +96,7 @@ class OrganizationReferenceV2
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return array
      */

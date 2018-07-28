@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class SearchSelectionSimpleRequest
+class SearchSelectionSimpleRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("city")
      * @JMS\Type("array<string>")
@@ -23,7 +24,7 @@ class SearchSelectionSimpleRequest
      * @var array
      */
     protected $city;
-
+                                    
     /**
      * @JMS\SerializedName("postcode")
      * @JMS\Type("array<string>")
@@ -33,7 +34,7 @@ class SearchSelectionSimpleRequest
      * @var array
      */
     protected $postcode;
-
+                                    
     /**
      * @JMS\SerializedName("sbi")
      * @JMS\Type("array<string>")
@@ -43,7 +44,7 @@ class SearchSelectionSimpleRequest
      * @var array
      */
     protected $sbi;
-
+                                    
     /**
      * @JMS\SerializedName("primary_sbi_only")
      * @JMS\Type("boolean")
@@ -52,7 +53,7 @@ class SearchSelectionSimpleRequest
      * @var bool
      */
     protected $primarySbiOnly;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form")
      * @JMS\Type("array<integer>")
@@ -62,7 +63,7 @@ class SearchSelectionSimpleRequest
      * @var array
      */
     protected $legalForm;
-
+                                    
     /**
      * @JMS\SerializedName("employees_min")
      * @JMS\Type("integer")
@@ -71,7 +72,7 @@ class SearchSelectionSimpleRequest
      * @var int
      */
     protected $employeesMin;
-
+                                    
     /**
      * @JMS\SerializedName("employees_max")
      * @JMS\Type("integer")
@@ -80,7 +81,7 @@ class SearchSelectionSimpleRequest
      * @var int
      */
     protected $employeesMax;
-
+                                    
     /**
      * @JMS\SerializedName("economically_active")
      * @JMS\Type("string")
@@ -89,7 +90,7 @@ class SearchSelectionSimpleRequest
      * @var string
      */
     protected $economicallyActive;
-
+                                    
     /**
      * @JMS\SerializedName("financial_status")
      * @JMS\Type("string")
@@ -98,7 +99,7 @@ class SearchSelectionSimpleRequest
      * @var string
      */
     protected $financialStatus;
-
+                                    
     /**
      * @JMS\SerializedName("changed_since")
      * @JMS\Type("string")
@@ -107,7 +108,7 @@ class SearchSelectionSimpleRequest
      * @var string
      */
     protected $changedSince;
-
+                                    
     /**
      * @JMS\SerializedName("new_since")
      * @JMS\Type("string")
@@ -116,7 +117,7 @@ class SearchSelectionSimpleRequest
      * @var string
      */
     protected $newSince;
-
+                                    
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -125,7 +126,7 @@ class SearchSelectionSimpleRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @JMS\SerializedName("provinces")
      * @JMS\Type("array<string>")
@@ -135,7 +136,7 @@ class SearchSelectionSimpleRequest
      * @var array
      */
     protected $provinces;
-
+                                    
     /**
      * @return array
      */
@@ -151,7 +152,7 @@ class SearchSelectionSimpleRequest
     {
         $this->city = $city;
     }
-
+                                    
     /**
      * @return array
      */
@@ -167,7 +168,7 @@ class SearchSelectionSimpleRequest
     {
         $this->postcode = $postcode;
     }
-
+                                    
     /**
      * @return array
      */
@@ -183,7 +184,7 @@ class SearchSelectionSimpleRequest
     {
         $this->sbi = $sbi;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -199,7 +200,7 @@ class SearchSelectionSimpleRequest
     {
         $this->primarySbiOnly = $primarySbiOnly;
     }
-
+                                    
     /**
      * @return array
      */
@@ -215,7 +216,7 @@ class SearchSelectionSimpleRequest
     {
         $this->legalForm = $legalForm;
     }
-
+                                    
     /**
      * @return int
      */
@@ -231,7 +232,7 @@ class SearchSelectionSimpleRequest
     {
         $this->employeesMin = $employeesMin;
     }
-
+                                    
     /**
      * @return int
      */
@@ -247,7 +248,7 @@ class SearchSelectionSimpleRequest
     {
         $this->employeesMax = $employeesMax;
     }
-
+                                    
     /**
      * @return string
      */
@@ -263,7 +264,7 @@ class SearchSelectionSimpleRequest
     {
         $this->economicallyActive = $economicallyActive;
     }
-
+                                    
     /**
      * @return string
      */
@@ -279,7 +280,7 @@ class SearchSelectionSimpleRequest
     {
         $this->financialStatus = $financialStatus;
     }
-
+                                    
     /**
      * @return string
      */
@@ -295,7 +296,7 @@ class SearchSelectionSimpleRequest
     {
         $this->changedSince = $changedSince;
     }
-
+                                    
     /**
      * @return string
      */
@@ -311,7 +312,7 @@ class SearchSelectionSimpleRequest
     {
         $this->newSince = $newSince;
     }
-
+                                    
     /**
      * @return int
      */
@@ -327,7 +328,7 @@ class SearchSelectionSimpleRequest
     {
         $this->page = $page;
     }
-
+                                    
     /**
      * @return array
      */

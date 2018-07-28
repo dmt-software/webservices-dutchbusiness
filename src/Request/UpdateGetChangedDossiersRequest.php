@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UpdateGetChangedDossiersRequest
+class UpdateGetChangedDossiersRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("changed_since")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -22,7 +23,7 @@ class UpdateGetChangedDossiersRequest
      * @var \DateTime
      */
     protected $changedSince;
-
+                                    
     /**
      * @JMS\SerializedName("update_types")
      * @JMS\Type("array<string>")
@@ -32,7 +33,7 @@ class UpdateGetChangedDossiersRequest
      * @var array
      */
     protected $updateTypes;
-
+                                    
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -41,7 +42,7 @@ class UpdateGetChangedDossiersRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @return \DateTime
      */
@@ -57,7 +58,7 @@ class UpdateGetChangedDossiersRequest
     {
         $this->changedSince = $changedSince;
     }
-
+                                    
     /**
      * @return array
      */
@@ -73,7 +74,7 @@ class UpdateGetChangedDossiersRequest
     {
         $this->updateTypes = $updateTypes;
     }
-
+                                    
     /**
      * @return int
      */

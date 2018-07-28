@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class EstablishmentV3
 {
-
+                        
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class EstablishmentV3
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("main_establishment")
      * @JMS\Type("boolean")
@@ -29,7 +29,7 @@ class EstablishmentV3
      * @var bool
      */
     protected $mainEstablishment;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class EstablishmentV3
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("activity")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class EstablishmentV3
      * @var string
      */
     protected $activity;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -56,34 +56,34 @@ class EstablishmentV3
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $establishmentDate;
-
+                                    
     /**
      * @JMS\SerializedName("date_since")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\DateV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var DateV3
      */
     protected $dateSince;
-
+                                    
     /**
      * @JMS\SerializedName("personnel")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\PersonnelInfoV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var PersonnelInfoV3
      */
     protected $personnel;
-
+                                    
     /**
      * @JMS\SerializedName("remarks")
      * @JMS\Type("array<string>")
@@ -93,7 +93,7 @@ class EstablishmentV3
      * @var array
      */
     protected $remarks;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\SbiCodeV3>")
@@ -103,25 +103,25 @@ class EstablishmentV3
      * @var SbiCodeV3[]
      */
     protected $sbiCodes;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_address")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV3
      */
     protected $establishmentAddress;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_address")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\AddressV3")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var AddressV3
      */
     protected $correspondenceAddress;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_numbers")
      * @JMS\Type("array<string>")
@@ -131,7 +131,7 @@ class EstablishmentV3
      * @var array
      */
     protected $telephoneNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("fax_numbers")
      * @JMS\Type("array<string>")
@@ -141,7 +141,7 @@ class EstablishmentV3
      * @var array
      */
     protected $faxNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("email_addresses")
      * @JMS\Type("array<string>")
@@ -151,7 +151,7 @@ class EstablishmentV3
      * @var array
      */
     protected $emailAddresses;
-
+                                    
     /**
      * @JMS\SerializedName("domain_names")
      * @JMS\Type("array<string>")
@@ -161,7 +161,7 @@ class EstablishmentV3
      * @var array
      */
     protected $domainNames;
-
+                                    
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -171,7 +171,7 @@ class EstablishmentV3
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @return string
      */
@@ -187,7 +187,7 @@ class EstablishmentV3
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -203,7 +203,7 @@ class EstablishmentV3
     {
         $this->mainEstablishment = $mainEstablishment;
     }
-
+                                    
     /**
      * @return string
      */
@@ -219,7 +219,7 @@ class EstablishmentV3
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -235,7 +235,7 @@ class EstablishmentV3
     {
         $this->activity = $activity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -251,7 +251,7 @@ class EstablishmentV3
     {
         $this->description = $description;
     }
-
+                                    
     /**
      * @return DateV3
      */
@@ -267,7 +267,7 @@ class EstablishmentV3
     {
         $this->establishmentDate = $establishmentDate;
     }
-
+                                    
     /**
      * @return DateV3
      */
@@ -283,7 +283,7 @@ class EstablishmentV3
     {
         $this->dateSince = $dateSince;
     }
-
+                                    
     /**
      * @return PersonnelInfoV3
      */
@@ -299,7 +299,7 @@ class EstablishmentV3
     {
         $this->personnel = $personnel;
     }
-
+                                    
     /**
      * @return array
      */
@@ -315,7 +315,7 @@ class EstablishmentV3
     {
         $this->remarks = $remarks;
     }
-
+                                    
     /**
      * @return SbiCodeV3[]
      */
@@ -331,7 +331,7 @@ class EstablishmentV3
     {
         $this->sbiCodes = $sbiCodes;
     }
-
+                                    
     /**
      * @return AddressV3
      */
@@ -347,7 +347,7 @@ class EstablishmentV3
     {
         $this->establishmentAddress = $establishmentAddress;
     }
-
+                                    
     /**
      * @return AddressV3
      */
@@ -363,7 +363,7 @@ class EstablishmentV3
     {
         $this->correspondenceAddress = $correspondenceAddress;
     }
-
+                                    
     /**
      * @return array
      */
@@ -379,7 +379,7 @@ class EstablishmentV3
     {
         $this->telephoneNumbers = $telephoneNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -395,7 +395,7 @@ class EstablishmentV3
     {
         $this->faxNumbers = $faxNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -411,7 +411,7 @@ class EstablishmentV3
     {
         $this->emailAddresses = $emailAddresses;
     }
-
+                                    
     /**
      * @return array
      */
@@ -427,7 +427,7 @@ class EstablishmentV3
     {
         $this->domainNames = $domainNames;
     }
-
+                                    
     /**
      * @return array
      */

@@ -111,7 +111,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetConcernRelationsDetailsResponse {
         return $this->process($request, GetConcernRelationsDetailsResponse::class);
     }
-
     /**
      * Search for an overview of Corporate Group Relationships aka `concern relaties` for specified dossier number.
      *
@@ -124,7 +123,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetConcernRelationsOverviewResponse {
         return $this->process($request, GetConcernRelationsOverviewResponse::class);
     }
-
     /**
      * Retrieve data on a business establishment.
      *
@@ -136,7 +134,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetDossierResponse::class);
     }
-
     /**
      * Get a list of logged updates for a specific business dossier.
      *
@@ -148,7 +145,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetDossierHistoryResponse::class);
     }
-
     /**
      * Retrieve data on a business establishment.
      *
@@ -160,7 +156,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetDossierV2Response::class);
     }
-
     /**
      * Retrieve data on a business establishment.
      *
@@ -172,7 +167,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetDossierV3Response::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -184,7 +178,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetExtractDocumentDataResponse::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -196,7 +189,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetExtractDocumentDataV2Response::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -208,7 +200,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetExtractDocumentDataV3Response::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -220,7 +211,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetExtractDocumentResponse::class);
     }
-
     /**
      * Retrieve a list of extract document references.
      *
@@ -232,7 +222,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetExtractHistoryChangedResponse::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -245,7 +234,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetExtractHistoryDocumentDataResponse {
         return $this->process($request, GetExtractHistoryDocumentDataResponse::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -258,7 +246,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetExtractHistoryDocumentDataV2Response {
         return $this->process($request, GetExtractHistoryDocumentDataV2Response::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -271,7 +258,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetExtractHistoryDocumentDataV3ByDossierResponse {
         return $this->process($request, GetExtractHistoryDocumentDataV3ByDossierResponse::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -284,7 +270,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetExtractHistoryDocumentDataV3Response {
         return $this->process($request, GetExtractHistoryDocumentDataV3Response::class);
     }
-
     /**
      * Retrieve a list of extract document references.
      *
@@ -296,7 +281,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetExtractHistoryResponse::class);
     }
-
     /**
      * Retrieve legal entity data on a business establishment.
      *
@@ -308,7 +292,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetLegalEntityResponse::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -321,7 +304,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetLegalExtractDocumentDataV2Response {
         return $this->process($request, GetLegalExtractDocumentDataV2Response::class);
     }
-
     /**
      * Retrieve a Chamber of Commerce extract document (Dutch: Uittreksel Handelsregister).
      *
@@ -334,7 +316,6 @@ class DutchBusinessHandler extends ClientHandler
     ): GetLegalExtractDocumentDataV3Response {
         return $this->process($request, GetLegalExtractDocumentDataV3Response::class);
     }
-
     /**
      * Retrieve the organization tree of a company.
      *
@@ -346,7 +327,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetOrganizationTreeResponse::class);
     }
-
     /**
      * Retrieve position data on a business establishment.
      *
@@ -358,7 +338,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetPositionsResponse::class);
     }
-
     /**
      * Look up a SBI (`Standaard Bedrijfs Indeling 2008`) code.
      *
@@ -370,7 +349,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetSBIDescriptionResponse::class);
     }
-
     /**
      * Retrieve SBI Information on a company.
      *
@@ -382,7 +360,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetSBIResponse::class);
     }
-
     /**
      * Retrieve data on a business establishment.
      *
@@ -394,7 +371,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, GetVatNumberResponse::class);
     }
-
     /**
      * Search for business establishments using a known identifier.
      *
@@ -406,7 +382,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchDossierNumberResponse::class);
     }
-
     /**
      * Search for business establishments using a known identifier.
      *
@@ -418,7 +393,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchEstablishmentsResponse::class);
     }
-
     /**
      * Find business establishments using a variety of parameters.
      *
@@ -430,7 +404,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchResponse::class);
     }
-
     /**
      * Get a paged result of all news items found.
      *
@@ -442,7 +415,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchNewsByDossierResponse::class);
     }
-
     /**
      * Find business establishments using a variety of parameters.
      *
@@ -454,7 +426,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchParametersResponse::class);
     }
-
     /**
      * Find business establishments using a variety of parameters.
      *
@@ -466,7 +437,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchParametersV2Response::class);
     }
-
     /**
      * Find business establishments based on postcode and house number.
      *
@@ -478,7 +448,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchPostcodeResponse::class);
     }
-
     /**
      * Search for businesses matching all of the given criteria.
      *
@@ -490,7 +459,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchSelectionResponse::class);
     }
-
     /**
      * Simple search for businesses matching all of the given criteria.
      *
@@ -502,7 +470,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, SearchSelectionSimpleResponse::class);
     }
-
     /**
      * Checks the status of an UBO investigation.
      *
@@ -514,7 +481,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, UBOCheckInvestigationResponse::class);
     }
-
     /**
      * Return the costs of a finished UBO investigation.
      *
@@ -526,7 +492,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, UBOCostsInvestigationResponse::class);
     }
-
     /**
      * Pickup the result of an UBO investigation.
      *
@@ -538,7 +503,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, UBOPickupInvestigationResponse::class);
     }
-
     /**
      * Starts an UBO investigation for given dossierNumber and establishmentNumber.
      *
@@ -556,12 +520,12 @@ class DutchBusinessHandler extends ClientHandler
      * wants to receive updates.
      *
      * @param UpdateAddDossierRequest $request
+     * @return null
      */
-    public function updateAddDossier(UpdateAddDossierRequest $request): void
+    public function updateAddDossier(UpdateAddDossierRequest $request)
     {
-        $this->process($request, null);
+        return $this->process($request);
     }
-
     /**
      * Retrieve information on the last change of a business establishment.
      *
@@ -573,7 +537,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, UpdateCheckDossierResponse::class);
     }
-
     /**
      * Retrieve all dossiers changed since the given date.
      *
@@ -585,7 +548,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, UpdateGetChangedDossiersResponse::class);
     }
-
     /**
      * Returns a list of all dossiers that have been updated since they were last retrieved by the user.
      *
@@ -597,7 +559,6 @@ class DutchBusinessHandler extends ClientHandler
     {
         return $this->process($request, UpdateGetDossiersResponse::class);
     }
-
     /**
      * Get a paged result of all the dossier the logged on user is subscribed to.
      *
@@ -615,9 +576,10 @@ class DutchBusinessHandler extends ClientHandler
      * call) wants to receive updates.
      *
      * @param UpdateRemoveDossierRequest $request
+     * @return null
      */
-    public function updateRemoveDossier(UpdateRemoveDossierRequest $request): void
+    public function updateRemoveDossier(UpdateRemoveDossierRequest $request)
     {
-        $this->process($request, null);
+        return $this->process($request);
     }
 }

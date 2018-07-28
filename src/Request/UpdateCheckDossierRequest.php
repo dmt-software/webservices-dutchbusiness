@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class UpdateCheckDossierRequest
+class UpdateCheckDossierRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class UpdateCheckDossierRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -31,7 +32,7 @@ class UpdateCheckDossierRequest
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("update_types")
      * @JMS\Type("array<string>")
@@ -41,7 +42,7 @@ class UpdateCheckDossierRequest
      * @var array
      */
     protected $updateTypes;
-
+                                    
     /**
      * @return string
      */
@@ -57,7 +58,7 @@ class UpdateCheckDossierRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -73,7 +74,7 @@ class UpdateCheckDossierRequest
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return array
      */

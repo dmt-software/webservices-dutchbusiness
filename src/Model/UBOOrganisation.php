@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UBOOrganisation
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UBOOrganisation
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UBOOrganisation
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_code")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class UBOOrganisation
      * @var string
      */
     protected $legalFormCode;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class UBOOrganisation
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("city")
      * @JMS\Type("string")
@@ -56,16 +56,16 @@ class UBOOrganisation
      * @var string
      */
     protected $city;
-
+                                    
     /**
      * @JMS\SerializedName("extract")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\UBOExtract")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var UBOExtract
      */
     protected $extract;
-
+                                    
     /**
      * @return string
      */
@@ -81,7 +81,7 @@ class UBOOrganisation
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -97,7 +97,7 @@ class UBOOrganisation
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -113,7 +113,7 @@ class UBOOrganisation
     {
         $this->legalFormCode = $legalFormCode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -129,7 +129,7 @@ class UBOOrganisation
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -145,7 +145,7 @@ class UBOOrganisation
     {
         $this->city = $city;
     }
-
+                                    
     /**
      * @return UBOExtract
      */

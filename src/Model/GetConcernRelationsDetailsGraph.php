@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class GetConcernRelationsDetailsGraph
 {
-
+                        
     /**
      * @JMS\SerializedName("nodes")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\GetConcernRelationsDetailsGraphNode>")
@@ -21,7 +21,7 @@ class GetConcernRelationsDetailsGraph
      * @var GetConcernRelationsDetailsGraphNode[]
      */
     protected $nodes;
-
+                                    
     /**
      * @JMS\SerializedName("links")
      * @JMS\Type("array<DMT\WebservicesNl\DutchBusiness\Model\GetConcernRelationsDetailsGraphLink>")
@@ -31,7 +31,7 @@ class GetConcernRelationsDetailsGraph
      * @var GetConcernRelationsDetailsGraphLink[]
      */
     protected $links;
-
+                                    
     /**
      * @return GetConcernRelationsDetailsGraphNode[]
      */
@@ -47,7 +47,7 @@ class GetConcernRelationsDetailsGraph
     {
         $this->nodes = $nodes;
     }
-
+                                    
     /**
      * @return GetConcernRelationsDetailsGraphLink[]
      */

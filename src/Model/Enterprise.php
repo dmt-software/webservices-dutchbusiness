@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Enterprise
 {
-
+                        
     /**
      * @JMS\SerializedName("rsin_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class Enterprise
      * @var string
      */
     protected $rsinNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class Enterprise
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("registration")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class Enterprise
      * @var string
      */
     protected $registration;
-
+                                    
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class Enterprise
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -56,7 +56,7 @@ class Enterprise
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -66,7 +66,7 @@ class Enterprise
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @JMS\SerializedName("activity")
      * @JMS\Type("string")
@@ -75,7 +75,7 @@ class Enterprise
      * @var string
      */
     protected $activity;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -84,7 +84,7 @@ class Enterprise
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes")
      * @JMS\Type("array<string>")
@@ -94,7 +94,7 @@ class Enterprise
      * @var array
      */
     protected $sbiCodes;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes_text")
      * @JMS\Type("array<string>")
@@ -104,7 +104,7 @@ class Enterprise
      * @var array
      */
     protected $sbiCodesText;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_postcode")
      * @JMS\Type("string")
@@ -113,7 +113,7 @@ class Enterprise
      * @var string
      */
     protected $establishmentPostcode;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -122,7 +122,7 @@ class Enterprise
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -131,7 +131,7 @@ class Enterprise
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number")
      * @JMS\Type("integer")
@@ -140,7 +140,7 @@ class Enterprise
      * @var int
      */
     protected $establishmentHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number_addition")
      * @JMS\Type("string")
@@ -149,7 +149,7 @@ class Enterprise
      * @var string
      */
     protected $establishmentHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_country")
      * @JMS\Type("string")
@@ -158,7 +158,7 @@ class Enterprise
      * @var string
      */
     protected $establishmentCountry;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_postcode")
      * @JMS\Type("string")
@@ -167,7 +167,7 @@ class Enterprise
      * @var string
      */
     protected $correspondencePostcode;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -176,7 +176,7 @@ class Enterprise
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -185,7 +185,7 @@ class Enterprise
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number")
      * @JMS\Type("integer")
@@ -194,7 +194,7 @@ class Enterprise
      * @var int
      */
     protected $correspondenceHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number_addition")
      * @JMS\Type("string")
@@ -203,7 +203,7 @@ class Enterprise
      * @var string
      */
     protected $correspondenceHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_country")
      * @JMS\Type("string")
@@ -212,7 +212,7 @@ class Enterprise
      * @var string
      */
     protected $correspondenceCountry;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_numbers")
      * @JMS\Type("array<string>")
@@ -222,7 +222,7 @@ class Enterprise
      * @var array
      */
     protected $telephoneNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("fax_numbers")
      * @JMS\Type("array<string>")
@@ -232,7 +232,7 @@ class Enterprise
      * @var array
      */
     protected $faxNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("email_addresses")
      * @JMS\Type("array<string>")
@@ -242,7 +242,7 @@ class Enterprise
      * @var array
      */
     protected $emailAddresses;
-
+                                    
     /**
      * @JMS\SerializedName("domain_names")
      * @JMS\Type("array<string>")
@@ -252,52 +252,52 @@ class Enterprise
      * @var array
      */
     protected $domainNames;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $establishmentDate;
-
+                                    
     /**
      * @JMS\SerializedName("incorporation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $incorporationDate;
-
+                                    
     /**
      * @JMS\SerializedName("founding_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $foundingDate;
-
+                                    
     /**
      * @JMS\SerializedName("discontinuation_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $discontinuationDate;
-
+                                    
     /**
      * @JMS\SerializedName("date_since")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dateSince;
-
+                                    
     /**
      * @JMS\SerializedName("personnel")
      * @JMS\Type("integer")
@@ -306,7 +306,7 @@ class Enterprise
      * @var int
      */
     protected $personnel;
-
+                                    
     /**
      * @return string
      */
@@ -322,7 +322,7 @@ class Enterprise
     {
         $this->rsinNumber = $rsinNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -338,7 +338,7 @@ class Enterprise
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -354,7 +354,7 @@ class Enterprise
     {
         $this->registration = $registration;
     }
-
+                                    
     /**
      * @return string
      */
@@ -370,7 +370,7 @@ class Enterprise
     {
         $this->status = $status;
     }
-
+                                    
     /**
      * @return string
      */
@@ -386,7 +386,7 @@ class Enterprise
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return array
      */
@@ -402,7 +402,7 @@ class Enterprise
     {
         $this->tradeNames = $tradeNames;
     }
-
+                                    
     /**
      * @return string
      */
@@ -418,7 +418,7 @@ class Enterprise
     {
         $this->activity = $activity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -434,7 +434,7 @@ class Enterprise
     {
         $this->description = $description;
     }
-
+                                    
     /**
      * @return array
      */
@@ -450,7 +450,7 @@ class Enterprise
     {
         $this->sbiCodes = $sbiCodes;
     }
-
+                                    
     /**
      * @return array
      */
@@ -466,7 +466,7 @@ class Enterprise
     {
         $this->sbiCodesText = $sbiCodesText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -482,7 +482,7 @@ class Enterprise
     {
         $this->establishmentPostcode = $establishmentPostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -498,7 +498,7 @@ class Enterprise
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -514,7 +514,7 @@ class Enterprise
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -530,7 +530,7 @@ class Enterprise
     {
         $this->establishmentHouseNumber = $establishmentHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -546,7 +546,7 @@ class Enterprise
     {
         $this->establishmentHouseNumberAddition = $establishmentHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -562,7 +562,7 @@ class Enterprise
     {
         $this->establishmentCountry = $establishmentCountry;
     }
-
+                                    
     /**
      * @return string
      */
@@ -578,7 +578,7 @@ class Enterprise
     {
         $this->correspondencePostcode = $correspondencePostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -594,7 +594,7 @@ class Enterprise
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -610,7 +610,7 @@ class Enterprise
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -626,7 +626,7 @@ class Enterprise
     {
         $this->correspondenceHouseNumber = $correspondenceHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -642,7 +642,7 @@ class Enterprise
     {
         $this->correspondenceHouseNumberAddition = $correspondenceHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -658,7 +658,7 @@ class Enterprise
     {
         $this->correspondenceCountry = $correspondenceCountry;
     }
-
+                                    
     /**
      * @return array
      */
@@ -674,7 +674,7 @@ class Enterprise
     {
         $this->telephoneNumbers = $telephoneNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -690,7 +690,7 @@ class Enterprise
     {
         $this->faxNumbers = $faxNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -706,7 +706,7 @@ class Enterprise
     {
         $this->emailAddresses = $emailAddresses;
     }
-
+                                    
     /**
      * @return array
      */
@@ -722,7 +722,7 @@ class Enterprise
     {
         $this->domainNames = $domainNames;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -738,7 +738,7 @@ class Enterprise
     {
         $this->establishmentDate = $establishmentDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -754,7 +754,7 @@ class Enterprise
     {
         $this->incorporationDate = $incorporationDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -770,7 +770,7 @@ class Enterprise
     {
         $this->foundingDate = $foundingDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -786,7 +786,7 @@ class Enterprise
     {
         $this->discontinuationDate = $discontinuationDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -802,7 +802,7 @@ class Enterprise
     {
         $this->dateSince = $dateSince;
     }
-
+                                    
     /**
      * @return int
      */

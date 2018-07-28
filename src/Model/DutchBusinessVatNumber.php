@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class DutchBusinessVatNumber
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class DutchBusinessVatNumber
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("vat_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class DutchBusinessVatNumber
      * @var string
      */
     protected $vatNumber;
-
+                                    
     /**
      * @JMS\SerializedName("date_last_update")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -38,7 +38,7 @@ class DutchBusinessVatNumber
      * @var \DateTime
      */
     protected $dateLastUpdate;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class DutchBusinessVatNumber
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -70,7 +70,7 @@ class DutchBusinessVatNumber
     {
         $this->vatNumber = $vatNumber;
     }
-
+                                    
     /**
      * @return \DateTime
      */

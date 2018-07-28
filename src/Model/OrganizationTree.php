@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class OrganizationTree
 {
-
+                        
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class OrganizationTree
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -29,16 +29,16 @@ class OrganizationTree
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("tree")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\OrganizationNode")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var OrganizationNode
      */
     protected $tree;
-
+                                    
     /**
      * @return string
      */
@@ -54,7 +54,7 @@ class OrganizationTree
     {
         $this->name = $name;
     }
-
+                                    
     /**
      * @return string
      */
@@ -70,7 +70,7 @@ class OrganizationTree
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return OrganizationNode
      */

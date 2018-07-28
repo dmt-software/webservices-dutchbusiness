@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class GetExtractHistoryDocumentDataV3ByDossierRequest
+class GetExtractHistoryDocumentDataV3ByDossierRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class GetExtractHistoryDocumentDataV3ByDossierRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("include_source")
      * @JMS\Type("boolean")
@@ -31,7 +32,7 @@ class GetExtractHistoryDocumentDataV3ByDossierRequest
      * @var bool
      */
     protected $includeSource;
-
+                                    
     /**
      * @JMS\SerializedName("period_start")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -40,7 +41,7 @@ class GetExtractHistoryDocumentDataV3ByDossierRequest
      * @var \DateTime
      */
     protected $periodStart;
-
+                                    
     /**
      * @JMS\SerializedName("period_end")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -49,7 +50,7 @@ class GetExtractHistoryDocumentDataV3ByDossierRequest
      * @var \DateTime
      */
     protected $periodEnd;
-
+                                    
     /**
      * @return string
      */
@@ -65,7 +66,7 @@ class GetExtractHistoryDocumentDataV3ByDossierRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -81,7 +82,7 @@ class GetExtractHistoryDocumentDataV3ByDossierRequest
     {
         $this->includeSource = $includeSource;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -97,7 +98,7 @@ class GetExtractHistoryDocumentDataV3ByDossierRequest
     {
         $this->periodStart = $periodStart;
     }
-
+                                    
     /**
      * @return \DateTime
      */

@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class SearchPostcodeRequest
+class SearchPostcodeRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("postcode")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class SearchPostcodeRequest
      * @var string
      */
     protected $postcode;
-
+                                    
     /**
      * @JMS\SerializedName("house_number")
      * @JMS\Type("integer")
@@ -31,7 +32,7 @@ class SearchPostcodeRequest
      * @var int
      */
     protected $houseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("house_number_addition")
      * @JMS\Type("string")
@@ -40,7 +41,7 @@ class SearchPostcodeRequest
      * @var string
      */
     protected $houseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("page")
      * @JMS\Type("integer")
@@ -49,7 +50,7 @@ class SearchPostcodeRequest
      * @var int
      */
     protected $page;
-
+                                    
     /**
      * @return string
      */
@@ -65,7 +66,7 @@ class SearchPostcodeRequest
     {
         $this->postcode = $postcode;
     }
-
+                                    
     /**
      * @return int
      */
@@ -81,7 +82,7 @@ class SearchPostcodeRequest
     {
         $this->houseNumber = $houseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -97,7 +98,7 @@ class SearchPostcodeRequest
     {
         $this->houseNumberAddition = $houseNumberAddition;
     }
-
+                                    
     /**
      * @return int
      */

@@ -2,6 +2,7 @@
 
 namespace DMT\WebservicesNl\DutchBusiness\Request;
 
+use DMT\WebservicesNl\Client\Request\RequestInterface;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,9 +12,9 @@ use JMS\Serializer\Annotation as JMS;
  *
  * @JMS\AccessType("public_method")
  */
-class GetExtractHistoryRequest
+class GetExtractHistoryRequest implements RequestInterface
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -22,7 +23,7 @@ class GetExtractHistoryRequest
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("period_start_date")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -31,7 +32,7 @@ class GetExtractHistoryRequest
      * @var \DateTime
      */
     protected $periodStartDate;
-
+                                    
     /**
      * @JMS\SerializedName("period_end_date")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -40,7 +41,7 @@ class GetExtractHistoryRequest
      * @var \DateTime
      */
     protected $periodEndDate;
-
+                                    
     /**
      * @return string
      */
@@ -56,7 +57,7 @@ class GetExtractHistoryRequest
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return \DateTime
      */
@@ -72,7 +73,7 @@ class GetExtractHistoryRequest
     {
         $this->periodStartDate = $periodStartDate;
     }
-
+                                    
     /**
      * @return \DateTime
      */

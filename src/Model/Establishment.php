@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Establishment
 {
-
+                        
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class Establishment
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("main_establishment")
      * @JMS\Type("boolean")
@@ -29,7 +29,7 @@ class Establishment
      * @var bool
      */
     protected $mainEstablishment;
-
+                                    
     /**
      * @JMS\SerializedName("status")
      * @JMS\Type("string")
@@ -38,7 +38,7 @@ class Establishment
      * @var string
      */
     protected $status;
-
+                                    
     /**
      * @JMS\SerializedName("legal_form_text")
      * @JMS\Type("string")
@@ -47,7 +47,7 @@ class Establishment
      * @var string
      */
     protected $legalFormText;
-
+                                    
     /**
      * @JMS\SerializedName("trade_names")
      * @JMS\Type("array<string>")
@@ -57,7 +57,7 @@ class Establishment
      * @var array
      */
     protected $tradeNames;
-
+                                    
     /**
      * @JMS\SerializedName("activity")
      * @JMS\Type("string")
@@ -66,7 +66,7 @@ class Establishment
      * @var string
      */
     protected $activity;
-
+                                    
     /**
      * @JMS\SerializedName("description")
      * @JMS\Type("string")
@@ -75,7 +75,7 @@ class Establishment
      * @var string
      */
     protected $description;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes")
      * @JMS\Type("array<string>")
@@ -85,7 +85,7 @@ class Establishment
      * @var array
      */
     protected $sbiCodes;
-
+                                    
     /**
      * @JMS\SerializedName("sbi_codes_text")
      * @JMS\Type("array<string>")
@@ -95,7 +95,7 @@ class Establishment
      * @var array
      */
     protected $sbiCodesText;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_postcode")
      * @JMS\Type("string")
@@ -104,7 +104,7 @@ class Establishment
      * @var string
      */
     protected $establishmentPostcode;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_city")
      * @JMS\Type("string")
@@ -113,7 +113,7 @@ class Establishment
      * @var string
      */
     protected $establishmentCity;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_street")
      * @JMS\Type("string")
@@ -122,7 +122,7 @@ class Establishment
      * @var string
      */
     protected $establishmentStreet;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number")
      * @JMS\Type("integer")
@@ -131,7 +131,7 @@ class Establishment
      * @var int
      */
     protected $establishmentHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_house_number_addition")
      * @JMS\Type("string")
@@ -140,7 +140,7 @@ class Establishment
      * @var string
      */
     protected $establishmentHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_country")
      * @JMS\Type("string")
@@ -149,7 +149,7 @@ class Establishment
      * @var string
      */
     protected $establishmentCountry;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_postcode")
      * @JMS\Type("string")
@@ -158,7 +158,7 @@ class Establishment
      * @var string
      */
     protected $correspondencePostcode;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_city")
      * @JMS\Type("string")
@@ -167,7 +167,7 @@ class Establishment
      * @var string
      */
     protected $correspondenceCity;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_street")
      * @JMS\Type("string")
@@ -176,7 +176,7 @@ class Establishment
      * @var string
      */
     protected $correspondenceStreet;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number")
      * @JMS\Type("integer")
@@ -185,7 +185,7 @@ class Establishment
      * @var int
      */
     protected $correspondenceHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_house_number_addition")
      * @JMS\Type("string")
@@ -194,7 +194,7 @@ class Establishment
      * @var string
      */
     protected $correspondenceHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("correspondence_country")
      * @JMS\Type("string")
@@ -203,7 +203,7 @@ class Establishment
      * @var string
      */
     protected $correspondenceCountry;
-
+                                    
     /**
      * @JMS\SerializedName("curator_postcode")
      * @JMS\Type("string")
@@ -212,7 +212,7 @@ class Establishment
      * @var string
      */
     protected $curatorPostcode;
-
+                                    
     /**
      * @JMS\SerializedName("curator_city")
      * @JMS\Type("string")
@@ -221,7 +221,7 @@ class Establishment
      * @var string
      */
     protected $curatorCity;
-
+                                    
     /**
      * @JMS\SerializedName("curator_street")
      * @JMS\Type("string")
@@ -230,7 +230,7 @@ class Establishment
      * @var string
      */
     protected $curatorStreet;
-
+                                    
     /**
      * @JMS\SerializedName("curator_house_number")
      * @JMS\Type("integer")
@@ -239,7 +239,7 @@ class Establishment
      * @var int
      */
     protected $curatorHouseNumber;
-
+                                    
     /**
      * @JMS\SerializedName("curator_house_number_addition")
      * @JMS\Type("string")
@@ -248,7 +248,7 @@ class Establishment
      * @var string
      */
     protected $curatorHouseNumberAddition;
-
+                                    
     /**
      * @JMS\SerializedName("curator_country")
      * @JMS\Type("string")
@@ -257,7 +257,7 @@ class Establishment
      * @var string
      */
     protected $curatorCountry;
-
+                                    
     /**
      * @JMS\SerializedName("telephone_numbers")
      * @JMS\Type("array<string>")
@@ -267,7 +267,7 @@ class Establishment
      * @var array
      */
     protected $telephoneNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("fax_numbers")
      * @JMS\Type("array<string>")
@@ -277,7 +277,7 @@ class Establishment
      * @var array
      */
     protected $faxNumbers;
-
+                                    
     /**
      * @JMS\SerializedName("email_addresses")
      * @JMS\Type("array<string>")
@@ -287,7 +287,7 @@ class Establishment
      * @var array
      */
     protected $emailAddresses;
-
+                                    
     /**
      * @JMS\SerializedName("domain_names")
      * @JMS\Type("array<string>")
@@ -297,25 +297,25 @@ class Establishment
      * @var array
      */
     protected $domainNames;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_date")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $establishmentDate;
-
+                                    
     /**
      * @JMS\SerializedName("date_since")
      * @JMS\Type("DMT\WebservicesNl\DutchBusiness\Model\Date")
      * @JMS\XmlElement(cdata=false)
      *
-     * @var array
+     * @var Date
      */
     protected $dateSince;
-
+                                    
     /**
      * @JMS\SerializedName("personnel")
      * @JMS\Type("integer")
@@ -324,7 +324,7 @@ class Establishment
      * @var int
      */
     protected $personnel;
-
+                                    
     /**
      * @return string
      */
@@ -340,7 +340,7 @@ class Establishment
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return bool
      */
@@ -356,7 +356,7 @@ class Establishment
     {
         $this->mainEstablishment = $mainEstablishment;
     }
-
+                                    
     /**
      * @return string
      */
@@ -372,7 +372,7 @@ class Establishment
     {
         $this->status = $status;
     }
-
+                                    
     /**
      * @return string
      */
@@ -388,7 +388,7 @@ class Establishment
     {
         $this->legalFormText = $legalFormText;
     }
-
+                                    
     /**
      * @return array
      */
@@ -404,7 +404,7 @@ class Establishment
     {
         $this->tradeNames = $tradeNames;
     }
-
+                                    
     /**
      * @return string
      */
@@ -420,7 +420,7 @@ class Establishment
     {
         $this->activity = $activity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -436,7 +436,7 @@ class Establishment
     {
         $this->description = $description;
     }
-
+                                    
     /**
      * @return array
      */
@@ -452,7 +452,7 @@ class Establishment
     {
         $this->sbiCodes = $sbiCodes;
     }
-
+                                    
     /**
      * @return array
      */
@@ -468,7 +468,7 @@ class Establishment
     {
         $this->sbiCodesText = $sbiCodesText;
     }
-
+                                    
     /**
      * @return string
      */
@@ -484,7 +484,7 @@ class Establishment
     {
         $this->establishmentPostcode = $establishmentPostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -500,7 +500,7 @@ class Establishment
     {
         $this->establishmentCity = $establishmentCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -516,7 +516,7 @@ class Establishment
     {
         $this->establishmentStreet = $establishmentStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -532,7 +532,7 @@ class Establishment
     {
         $this->establishmentHouseNumber = $establishmentHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -548,7 +548,7 @@ class Establishment
     {
         $this->establishmentHouseNumberAddition = $establishmentHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -564,7 +564,7 @@ class Establishment
     {
         $this->establishmentCountry = $establishmentCountry;
     }
-
+                                    
     /**
      * @return string
      */
@@ -580,7 +580,7 @@ class Establishment
     {
         $this->correspondencePostcode = $correspondencePostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -596,7 +596,7 @@ class Establishment
     {
         $this->correspondenceCity = $correspondenceCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -612,7 +612,7 @@ class Establishment
     {
         $this->correspondenceStreet = $correspondenceStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -628,7 +628,7 @@ class Establishment
     {
         $this->correspondenceHouseNumber = $correspondenceHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -644,7 +644,7 @@ class Establishment
     {
         $this->correspondenceHouseNumberAddition = $correspondenceHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -660,7 +660,7 @@ class Establishment
     {
         $this->correspondenceCountry = $correspondenceCountry;
     }
-
+                                    
     /**
      * @return string
      */
@@ -676,7 +676,7 @@ class Establishment
     {
         $this->curatorPostcode = $curatorPostcode;
     }
-
+                                    
     /**
      * @return string
      */
@@ -692,7 +692,7 @@ class Establishment
     {
         $this->curatorCity = $curatorCity;
     }
-
+                                    
     /**
      * @return string
      */
@@ -708,7 +708,7 @@ class Establishment
     {
         $this->curatorStreet = $curatorStreet;
     }
-
+                                    
     /**
      * @return int
      */
@@ -724,7 +724,7 @@ class Establishment
     {
         $this->curatorHouseNumber = $curatorHouseNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -740,7 +740,7 @@ class Establishment
     {
         $this->curatorHouseNumberAddition = $curatorHouseNumberAddition;
     }
-
+                                    
     /**
      * @return string
      */
@@ -756,7 +756,7 @@ class Establishment
     {
         $this->curatorCountry = $curatorCountry;
     }
-
+                                    
     /**
      * @return array
      */
@@ -772,7 +772,7 @@ class Establishment
     {
         $this->telephoneNumbers = $telephoneNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -788,7 +788,7 @@ class Establishment
     {
         $this->faxNumbers = $faxNumbers;
     }
-
+                                    
     /**
      * @return array
      */
@@ -804,7 +804,7 @@ class Establishment
     {
         $this->emailAddresses = $emailAddresses;
     }
-
+                                    
     /**
      * @return array
      */
@@ -820,7 +820,7 @@ class Establishment
     {
         $this->domainNames = $domainNames;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -836,7 +836,7 @@ class Establishment
     {
         $this->establishmentDate = $establishmentDate;
     }
-
+                                    
     /**
      * @return Date
      */
@@ -852,7 +852,7 @@ class Establishment
     {
         $this->dateSince = $dateSince;
     }
-
+                                    
     /**
      * @return int
      */

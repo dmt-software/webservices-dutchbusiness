@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class UpdateReference
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class UpdateReference
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("establishment_number")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class UpdateReference
      * @var string
      */
     protected $establishmentNumber;
-
+                                    
     /**
      * @JMS\SerializedName("update_types")
      * @JMS\Type("array<string>")
@@ -39,7 +39,7 @@ class UpdateReference
      * @var array
      */
     protected $updateTypes;
-
+                                    
     /**
      * @JMS\SerializedName("date_last_update")
      * @JMS\Type("DateTime<'Y-m-d'>")
@@ -48,7 +48,7 @@ class UpdateReference
      * @var \DateTime
      */
     protected $dateLastUpdate;
-
+                                    
     /**
      * @return string
      */
@@ -64,7 +64,7 @@ class UpdateReference
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
@@ -80,7 +80,7 @@ class UpdateReference
     {
         $this->establishmentNumber = $establishmentNumber;
     }
-
+                                    
     /**
      * @return array
      */
@@ -96,7 +96,7 @@ class UpdateReference
     {
         $this->updateTypes = $updateTypes;
     }
-
+                                    
     /**
      * @return \DateTime
      */

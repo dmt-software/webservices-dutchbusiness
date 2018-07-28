@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class NewsCompany
 {
-
+                        
     /**
      * @JMS\SerializedName("dossier_number")
      * @JMS\Type("string")
@@ -20,7 +20,7 @@ class NewsCompany
      * @var string
      */
     protected $dossierNumber;
-
+                                    
     /**
      * @JMS\SerializedName("name")
      * @JMS\Type("string")
@@ -29,7 +29,7 @@ class NewsCompany
      * @var string
      */
     protected $name;
-
+                                    
     /**
      * @return string
      */
@@ -45,7 +45,7 @@ class NewsCompany
     {
         $this->dossierNumber = $dossierNumber;
     }
-
+                                    
     /**
      * @return string
      */
